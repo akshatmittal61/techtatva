@@ -3,22 +3,21 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import favicon from "../images/favicon.png";
 import bg from "../images/bg.jpg";
+import about1 from "../images/about1.jpeg";
+import about2 from "../images/about2.jpeg";
 
 const Home = () => {
-	const setMaxY = window.innerHeight;
 	const vh = window.innerHeight / 100;
-	const rem = window.innerWidth > 672 ? 16 : 12;
+	const rem = window.innerWidth > 880 ? 16 : 12;
 	const totalHeight = 300 * vh + 10 * rem;
 	const maxY = Math.round(window.innerHeight / 100) * 50;
 	const [scroll_img, setScroll_img] = useState(
 		window.scrollY < maxY ? maxY - window.scrollY : maxY - maxY
 	);
-	const [scrollY, setScrollY] = useState(window.scrollY);
 	window.addEventListener("scroll", () => {
 		setScroll_img(
 			window.scrollY < maxY ? maxY - window.scrollY : maxY - maxY
 		);
-		setScrollY(window.scrollY);
 	});
 	const calculateTimeLeft = () => {
 		const difference = +new Date("12/29/2021") - +new Date();
@@ -40,9 +39,9 @@ const Home = () => {
 		}, 1000);
 		return () => clearTimeout(timer);
 	});
-	/* useEffect(() => {
+	useEffect(() => {
 		window.scrollTo(0, 0);
-	}, []); */
+	}, []);
 	AOS.init();
 	return (
 		<section className="home">
@@ -70,9 +69,9 @@ const Home = () => {
 					style={{
 						background:
 							window.scrollY > 60 * vh
-								? "linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0))"
+								? "var(--primary-4)"
 								: "transparent",
-						height: window.scrollY > 60 * vh ? "30%" : "40%",
+						height: window.scrollY > 60 * vh ? "25%" : "40%",
 						position:
 							window.scrollY > 60 * vh &&
 							window.scrollY < totalHeight - 140 * vh
@@ -80,10 +79,25 @@ const Home = () => {
 								: "relative",
 					}}
 				>
-					<div className="home-hero-content-left"></div>
+					<div className="home-hero-content-left">
+						<img
+							className="home-hero-content-left__img"
+							src={favicon}
+							alt="TECHतत्त्व:"
+							style={{
+								display:
+									window.scrollY > 60 * vh &&
+									window.scrollY < totalHeight - 140 * vh
+										? window.innerWidth > 880
+											? "flex"
+											: "none"
+										: "none",
+							}}
+						/>
+					</div>
 					<div className="home-hero-content-mid">
 						<span style={{ fontSize: "3.5rem", fontWeight: "700" }}>
-							TECHतत्त्व:
+							TECHतत्त्व: 2021
 						</span>
 						<span>Innovation Inspired</span>
 					</div>
@@ -96,7 +110,19 @@ const Home = () => {
 			>
 				<div className="home-about-container">
 					<div className="home-about-image">
-						<img />
+						<img src={about1} alt="About" />
+					</div>
+					<div className="home-about-content">
+						<div className="home-about-content-head">
+							About TECHतत्त्व:
+						</div>
+						<div className="home-about-content-body">
+							Techtatva is the technical and social event
+							conducted by AAVESH, IIIT Una. It marks days of
+							absolute ecstasy providing participants a competing
+							platform in technical, non-technical and some fun
+							events.
+						</div>
 					</div>
 				</div>
 			</div>
@@ -104,8 +130,40 @@ const Home = () => {
 				className="home-about"
 				style={{ backgroundImage: `url(${bg})` }}
 			>
-				<div className="home-about-head">Image Gallery</div>
-				<div className="home-about-body">Add</div>
+				<div className="home-about-container">
+					<div className="home-about-image">
+						<img src={about2} alt="About" />
+					</div>
+					<div className="home-about-content">
+						<div className="home-about-content-head">Mission</div>
+						<div className="home-about-content-body">
+							To promote Science, Technology, Engineering and
+							Mathematics (STEM) activities to young people and
+							the wider community.
+							<ul
+								style={{
+									fontSize: "1rem",
+									lineHeight: "1.25rem",
+								}}
+							>
+								<li>
+									A quality inclusive working environment
+									which is responsive to a member's voice
+								</li>
+								<li>
+									Learning from the past mistakes and working
+									together as a team for the betterment of the
+									institution.{" "}
+								</li>
+								<li>
+									Setting an ideal "benchmark” for the coming
+									year students regarding managing vital
+									events of our institute.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div
 				className="home-duration"

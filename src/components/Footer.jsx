@@ -60,8 +60,11 @@ const Footer = () => {
 						</div>
 						<div className="footer-left-mid-right-body">
 							<div className="row">
-								{events.map((event) => (
-									<div className="col-lg-33 col-md-50 col-sm-50">
+								{events.map((event, index) => (
+									<div
+										className="col-lg-33 col-md-33 col-sm-50"
+										key={index}
+									>
 										<Link
 											to={`event/${_.kebabCase(
 												event.title
