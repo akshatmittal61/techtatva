@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import favicon from "../images/favicon.png";
 import bg from "../images/bg.jpg";
 import about1 from "../images/about1.jpeg";
 import about2 from "../images/about2.jpeg";
+import planet from "../images/planet.svg";
 import brochure from "../assets/brochure.pdf";
 import Button from "../components/Button";
 
@@ -134,6 +137,8 @@ const Home = () => {
 										: "none",
 							}}
 							color="dark-purple"
+							containsLink
+							link="/participate"
 						/>
 					</div>
 				</div>
@@ -200,6 +205,42 @@ const Home = () => {
 				</div>
 			</div>
 			<div
+				className="home-navigation"
+				style={{ backgroundImage: `url(${bg})` }}
+			>
+				<div className="home-navigation-top">
+					<div className="home-navigation-link">
+						<Link to="/about">About</Link>
+					</div>
+					<div className="home-navigation-link">
+						<Link to="/events">Events</Link>
+					</div>
+				</div>
+				<div className="home-navigation-mid">
+					<div className="home-navigation-mid-left">
+						<div className="home-navigation-link">
+							<Link to="/timeline">Timeline</Link>
+						</div>
+					</div>
+					<div className="home-navigation-mid-mid">
+						<img src={planet} />
+					</div>
+					<div className="home-navigation-mid-right">
+						<div className="home-navigation-link">
+							<Link to="/participate">Participate</Link>
+						</div>
+					</div>
+				</div>
+				<div className="home-navigation-bottom">
+					<div className="home-navigation-link">
+						<Link to="/team">Team</Link>
+					</div>
+					<div className="home-navigation-link">
+						<Link to="/contact">Contact Us</Link>
+					</div>
+				</div>
+			</div>
+			<div
 				className="home-duration"
 				style={{ backgroundImage: `url(${bg})` }}
 			>
@@ -229,8 +270,8 @@ const Home = () => {
 				<Button
 					className="home-button"
 					text="Participate"
-					containsHref
-					href="https://docs.google.com"
+					containsLink
+					link="/participate"
 					color="blue"
 				/>
 				<Button
@@ -241,6 +282,7 @@ const Home = () => {
 					color="brown"
 				/>
 			</div>
+			<ScrollToTop />
 		</section>
 	);
 };

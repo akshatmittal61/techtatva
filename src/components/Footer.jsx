@@ -117,7 +117,7 @@ const Footer = () => {
 				</div>
 				<div className="footer-right-bottom">
 					<div className="footer-right-bottom-image">
-						<a href="https://aavesh.github.io">
+						<a href="https://aavesh-iiitu.github.io/">
 							<img
 								className="footer-right-bottom__img"
 								src={aavesh}
