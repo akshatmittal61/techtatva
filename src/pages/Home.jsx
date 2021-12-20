@@ -5,11 +5,13 @@ import favicon from "../images/favicon.png";
 import bg from "../images/bg.jpg";
 import about1 from "../images/about1.jpeg";
 import about2 from "../images/about2.jpeg";
+import brochure from "../assets/brochure.pdf";
+import Button from "../components/Button";
 
 const Home = () => {
 	const vh = window.innerHeight / 100;
 	const rem = window.innerWidth > 880 ? 16 : 12;
-	const totalHeight = 300 * vh + 10 * rem;
+	const totalHeight = 300 * vh + 20 * rem;
 	const maxY = Math.round(window.innerHeight / 100) * 50;
 	const [scroll_img, setScroll_img] = useState(
 		window.scrollY < maxY ? maxY - window.scrollY : maxY - maxY
@@ -96,12 +98,44 @@ const Home = () => {
 						/>
 					</div>
 					<div className="home-hero-content-mid">
-						<span style={{ fontSize: "3.5rem", fontWeight: "700" }}>
+						<span
+							style={{
+								fontSize:
+									window.scrollY > 60 * vh
+										? "2.5rem"
+										: "3.5rem",
+								fontWeight: "700",
+							}}
+						>
 							TECHतत्त्व: 2021
 						</span>
-						<span>Innovation Inspired</span>
+						<span
+							style={{
+								fontSize:
+									window.scrollY > 60 * vh
+										? "1.75rem"
+										: "3rem",
+							}}
+						>
+							Innovation Inspired
+						</span>
 					</div>
-					<div className="home-hero-content-right"></div>
+					<div className="home-hero-content-right">
+						<Button
+							className="home-hero-content-left__img"
+							text="Participate"
+							style={{
+								display:
+									window.scrollY > 60 * vh &&
+									window.scrollY < totalHeight - 140 * vh
+										? window.innerWidth > 880
+											? "flex"
+											: "none"
+										: "none",
+							}}
+							color="dark-purple"
+						/>
+					</div>
 				</div>
 			</div>
 			<div
@@ -187,6 +221,25 @@ const Home = () => {
 						<span>Seconds</span>
 					</div>
 				</div>
+			</div>
+			<div
+				className="home-buttons"
+				style={{ backgroundImage: `url(${bg})` }}
+			>
+				<Button
+					className="home-button"
+					text="Participate"
+					containsHref
+					href="https://docs.google.com"
+					color="blue"
+				/>
+				<Button
+					className="home-button"
+					text="Download Brochure"
+					containsHref
+					href={brochure}
+					color="brown"
+				/>
 			</div>
 		</section>
 	);
