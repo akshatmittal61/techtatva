@@ -48,6 +48,7 @@ const Contact = () => {
 							placeholder="Your Name"
 							value={user.name}
 							onChange={handleChange}
+							required
 						/>
 						<input
 							type="email"
@@ -61,6 +62,7 @@ const Contact = () => {
 							placeholder="Your message here"
 							value={user.message}
 							onChange={handleChange}
+							required
 						></textarea>
 						<Button
 							text="Submit Response"

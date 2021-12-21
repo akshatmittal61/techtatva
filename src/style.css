@@ -135,7 +135,8 @@
   display: flex;
   flex-wrap: wrap; }
   .row > * {
-    width: 100%; }
+    width: 100%;
+    max-width: 100%; }
 
 [class^="col"] {
   display: flex;
@@ -894,7 +895,8 @@ main {
     text-align: center;
     font-size: 4rem;
     line-height: 4rem;
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    text-transform: uppercase; }
   .contact-form {
     width: 75%;
     height: 80%;
@@ -936,6 +938,146 @@ main {
           height: 5%; } }
     .contact-form textarea {
       height: 45%; }
+
+.team {
+  width: 100%;
+  min-height: 200vh;
+  background-attachment: fixed;
+  background-color: #bbdefb;
+  background-image: url("https://www.transparenttextures.com/patterns/padded.png"); }
+  .team-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column; }
+  .team-head, .team-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    font-family: Audiowide, sans-serif; }
+    .team-head-head,
+    .team-head__head span, .team-section-head,
+    .team-section__head span {
+      padding: 1rem;
+      position: relative;
+      transition: all var(--transition-time) ease-in-out;
+      white-space: nowrap; }
+      .team-head-head::after,
+      .team-head__head span::after, .team-section-head::after,
+      .team-section__head span::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 100%;
+        height: 40%;
+        transition: all var(--transition-time) ease-in-out; }
+      .team-head-head:hover::after,
+      .team-head__head span:hover::after, .team-section-head:hover::after,
+      .team-section__head span:hover::after {
+        top: 0;
+        left: 0;
+        height: 100%; }
+  .team-head {
+    width: 100%;
+    height: 12.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; }
+  .team-body {
+    width: 100%;
+    display: flex;
+    flex-flow: column; }
+  .team-section {
+    width: 100%;
+    min-height: 8.33333vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+    font-size: 2rem; }
+    .team-section__head {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+    .team-section__body {
+      width: 100%;
+      height: 100%;
+      padding: 2.5rem 0; }
+      .team-section__body .person {
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center; }
+        .team-section__body .person-box {
+          width: 15rem;
+          height: 15rem;
+          border-radius: 500px;
+          font-size: 0.875rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-blend-mode: darken;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          transition: all var(--transition-time) ease-in-out;
+          outline: 12px solid transparent;
+          transform: scale(1); }
+          .team-section__body .person-box > * {
+            opacity: 0;
+            width: 100%;
+            visibility: hidden;
+            transition: all var(--transition-time) ease-in-out; }
+          .team-section__body .person-box:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            outline: 12px solid rgba(255, 255, 255, 0.25);
+            transform: scale(1.05);
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
+            .team-section__body .person-box:hover > * {
+              opacity: 1;
+              visibility: visible; }
+        .team-section__body .person-name, .team-section__body .person-subtitle {
+          height: 30%;
+          font-size: 1.25rem;
+          color: var(--bgcolor);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end; }
+        .team-section__body .person-subtitle {
+          height: 20%;
+          font-size: 0.875rem;
+          align-items: center; }
+        .team-section__body .person-socials {
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .team-section__body .person-social {
+          width: 20%;
+          height: 100%; }
+          .team-section__body .person-social a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          .team-section__body .person-social img {
+            object-fit: cover;
+            max-width: 50%;
+            max-height: 50%;
+            filter: invert(1); }
 
 button {
   background: none;
