@@ -7,6 +7,7 @@ import fb from "../images/facebook.svg";
 import ld from "../images/linkedin.svg";
 import ig from "../images/instagram.svg";
 import gh from "../images/github.svg";
+import ml from "../images/email.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -30,6 +31,11 @@ const Footer = () => {
 			link: "https://github.com/Aavesh-IIITU",
 			src: gh,
 			alt: "Aavesh-IIITU",
+		},
+		{
+			link: "mailto:aavesh@iiitu.ac.in",
+			src: ml,
+			alt: "aavesh@iiitu.ac.in",
 		},
 	];
 	return (

@@ -223,7 +223,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="home-navigation-mid-mid">
-						<img src={planet} />
+						<img src={planet} alt="Planet" />
 					</div>
 					<div className="home-navigation-mid-right">
 						<div className="home-navigation-link">

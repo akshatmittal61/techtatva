@@ -1,0 +1,75 @@
+import React, { useState, useEffect } from "react";
+import Button from "../components/Button";
+import image from "../images/contact.jpeg";
+
+const Contact = () => {
+	const vh = window.innerHeight / 100;
+	useEffect(() => {
+		window.scrollTo(0, 12.5 * vh);
+	}, []);
+	const [user, setUser] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setUser({
+			...user,
+			[name]: value,
+		});
+	};
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setUser({
+			name: "",
+			email: "",
+			message: "",
+		});
+		console.log(user);
+	};
+	return (
+		<section
+			className="contact"
+			style={{
+				backgroundImage: `url(${image})`,
+			}}
+		>
+			<div className="contact-box">
+				<div className="contact-container">
+					<div className="contact-head">Contact Us</div>
+					<form className="contact-form" onSubmit={handleSubmit}>
+						<input
+							type="text"
+							name="name"
+							placeholder="Your Name"
+							value={user.name}
+							onChange={handleChange}
+						/>
+						<input
+							type="email"
+							name="email"
+							placeholder="Your Email"
+							value={user.email}
+							onChange={handleChange}
+						/>
+						<textarea
+							name="message"
+							placeholder="Your message here"
+							value={user.message}
+							onChange={handleChange}
+						></textarea>
+						<Button
+							text="Submit Response"
+							type={"submit"}
+							color="transparent"
+							style={{ color: "var(--bgcolor)" }}
+						/>
+					</form>
+				</div>
+			</div>
+		</section>
+	);
+};
+
+export default Contact;

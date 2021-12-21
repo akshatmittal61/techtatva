@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Button = ({
 	text = "Click Me",
 	color = "indigo",
+	size = "normal",
 	containsLink = false,
 	link = "/",
 	containsHref = false,
@@ -16,6 +17,8 @@ const Button = ({
 	style,
 }) => {
 	let classes = "btn";
+	if (size === "small") className += " btn-sm";
+	else if (size === "large") className = " btn-lg";
 	return (
 		<>
 			{containsLink ? (
