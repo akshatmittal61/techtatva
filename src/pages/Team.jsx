@@ -28,17 +28,6 @@ const Team = () => {
 				return;
 		}
 	};
-	const noOfMem = () => {
-		let k = 0;
-		teams.forEach((team) => {
-			k += team.members.length;
-		});
-		return k;
-	};
-	const nMem = (team) => {
-		return team.members.length;
-	};
-	noOfMem();
 	return (
 		<section className="team">
 			<div className="team-container">

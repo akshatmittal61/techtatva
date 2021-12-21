@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
@@ -14,7 +15,7 @@ const App = () => {
 			case "/contact":
 				return "brown";
 			case "/about":
-				return "green";
+				return "dark-purple";
 			case "/team":
 				return "blue";
 			case "/events":
@@ -35,9 +36,10 @@ const App = () => {
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/timeline" element={<TimeLine />} />
 					<Route path="/team" element={<Team />} />
 					<Route path="/contact" element={<Contact />} />
-					<Route path="/timeline" element={<TimeLine />} />
 				</Routes>
 			</main>
 			<Footer />
