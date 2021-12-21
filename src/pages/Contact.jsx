@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Button from "../components/Button";
+import SnackBar from "../components/SnackBar";
 import image from "../images/contact.jpeg";
 
 const Contact = () => {
+	const [show, setShow] = useState(false);
 	const vh = window.innerHeight / 100;
 	useEffect(() => {
 		window.scrollTo(0, 12.5 * vh);
@@ -27,6 +29,7 @@ const Contact = () => {
 			message: "",
 		});
 		console.log(user);
+		setShow(true);
 	};
 	return (
 		<section
@@ -68,6 +71,7 @@ const Contact = () => {
 					</form>
 				</div>
 			</div>
+			{show && <SnackBar text="Response Submitted" delayTime={2500} />}
 		</section>
 	);
 };
