@@ -19,6 +19,11 @@
   --primary-3: #f2f2f2;
   --primary-4: #404040;
   --primary-5: #0d0d0d;
+  --secondary: #2d4a69;
+  --secondary-100: #6e859d;
+  --secondary-400: #476380;
+  --secondary-600: #193653;
+  --secondary-700: #082038;
   --back-shadow: rgba(0, 0, 0, 0.2);
   --back-shadow-light: rgba(0, 0, 0, 0.1);
   --transition-time: 200ms;
@@ -1078,6 +1083,135 @@ main {
             max-width: 50%;
             max-height: 50%;
             filter: invert(1); }
+
+.timeline {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0.75rem 5rem 3.5rem 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column; }
+  @media (max-width: 880px) {
+    .timeline {
+      padding: 3.5rem 3rem; } }
+  @media (max-width: 672px) {
+    .timeline {
+      padding: 3rem 2rem; } }
+  .timeline-head {
+    width: 100%;
+    height: 12.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: Audiowide, sans-serif;
+    color: var(--bgcolor); }
+    .timeline-head span {
+      padding: 1rem;
+      position: relative;
+      transition: all var(--transition-time) ease-in-out;
+      white-space: nowrap; }
+      .timeline-head span::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        background-color: rgba(255, 255, 255, 0.25);
+        width: 100%;
+        height: 40%;
+        transition: all var(--transition-time) ease-in-out; }
+      .timeline-head span:hover::after {
+        top: 0;
+        left: 0;
+        height: 100%; }
+  .timeline-body {
+    width: 100%;
+    height: 100%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 880px) {
+      .timeline-body {
+        padding: 0; } }
+  .timeline-bar {
+    width: 0.5rem;
+    height: 100%;
+    background-color: var(--secondary);
+    margin: 0 1.5rem;
+    border-radius: 500px; }
+  .timeline-container {
+    width: 80%;
+    height: 100%; }
+    @media (max-width: 880px) {
+      .timeline-container {
+        width: 90%; } }
+    @media (max-width: 672px) {
+      .timeline-container {
+        width: 97.5%; } }
+
+.activity {
+  width: 75%;
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 0; }
+  @media (max-width: 880px) {
+    .activity {
+      width: 100%; } }
+  .activity::before {
+    content: "";
+    position: absolute;
+    left: -2.5rem;
+    top: 40%;
+    padding: 0.5rem;
+    background-color: var(--bgcolor);
+    border: 5px solid var(--blue);
+    border-radius: 500px; }
+  .activity-frame {
+    min-height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    padding: 0.25rem 0.125rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--green) 4%, var(--blue) 0%) top/100% 34% no-repeat, linear-gradient(90deg, var(--yellow) 50%, var(--blue) 0%) top/100% 82% no-repeat, linear-gradient(90deg, var(--yellow) 10%, var(--red) 0%) top/100% 100%;
+    box-shadow: 0 10px 15px rgba(60, 64, 67, 0.3); }
+    @media (max-width: 672px) {
+      .activity-frame {
+        padding: 0.125rem; } }
+  .activity-box {
+    position: relative;
+    height: 99%;
+    width: 99%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition: all var(--transition-time) ease-in-out; }
+  .activity-title {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1rem 1rem 0; }
+  .activity-content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
 
 button {
   background: none;

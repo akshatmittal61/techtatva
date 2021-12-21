@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
+import TimeLine from "./pages/TimeLine";
 
 const App = () => {
 	let location = useLocation();
@@ -19,7 +20,7 @@ const App = () => {
 			case "/events":
 				return "yellow";
 			case "/timeline":
-				return "red";
+				return "secondary";
 			case "/participate":
 				return "indigo";
 			default:
@@ -36,6 +37,7 @@ const App = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/team" element={<Team />} />
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/timeline" element={<TimeLine />} />
 				</Routes>
 			</main>
 			<Footer />
