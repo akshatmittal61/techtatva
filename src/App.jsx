@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
 import TimeLine from "./pages/TimeLine";
@@ -19,7 +20,7 @@ const App = () => {
 			case "/team":
 				return "blue";
 			case "/events":
-				return "yellow";
+				return "green";
 			case "/timeline":
 				return "secondary";
 			case "/participate":
@@ -37,6 +38,7 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/events" element={<Events />} />
 					<Route path="/timeline" element={<TimeLine />} />
 					<Route path="/team" element={<Team />} />
 					<Route path="/contact" element={<Contact />} />
