@@ -1681,6 +1681,7 @@ main {
         right: 1rem;
         top: 1rem; }
       .event-mac-body__button {
+        background-color: var(--mac-bgcolor);
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 500px;
         padding: 0.5rem;
@@ -1710,6 +1711,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
@@ -1720,6 +1722,10 @@ main {
           .event-mac-body-images {
             width: 100%;
             height: 45%; } }
+        .event-mac-body-images__Img {
+          object-fit: cover;
+          max-width: 85%;
+          max-height: 85%; }
       .event-mac-body-content {
         width: 60%;
         height: 100%;

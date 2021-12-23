@@ -71,15 +71,35 @@ const Event = ({ event }) => {
 						<div
 							className="event-mac-body-images"
 							style={{
-								backgroundImage: `url(${
-									k === 0
-										? event.backImg
-										: k === 1
-										? rulesImg
-										: prizeImg
-								})`,
+								backgroundImage: `url(${event.backImg})`,
 							}}
-						></div>
+						>
+							{k == 0 && (
+								<>
+									<img className="event-mac-body-images__img" />
+									<img className="event-mac-body-images__img" />
+									<img className="event-mac-body-images__img" />
+								</>
+							)}
+							{k === 1 && (
+								<>
+									<img
+										src={rulesImg}
+										alt={`${event.title} Rules`}
+										className="event-mac-body-images__Img"
+									/>
+								</>
+							)}
+							{k === 2 && (
+								<>
+									<img
+										src={prizeImg}
+										alt={`${event.title} Prizes`}
+										className="event-mac-body-images__Img"
+									/>
+								</>
+							)}
+						</div>
 						<div className="event-mac-body-content">
 							<div className="event-mac-body-head">
 								<span
