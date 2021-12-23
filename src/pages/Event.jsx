@@ -7,13 +7,19 @@ import "aos/dist/aos.css";
 import EventRules from "../components/EventRules";
 import EventPrizes from "../components/EventPrizes";
 import EventAbout from "../components/EventAbout";
+import AllEvents from "../components/AllEvents";
 
 const Event = ({ event }) => {
 	AOS.init();
 	const vh = window.innerHeight / 100;
+	const [allEvents, setAllEvents] = useState(false);
 	useEffect(() => {
 		window.scrollTo(0, 12.5 * vh);
 	}, []);
+	useEffect(() => {
+		window.scrollTo(0, 12.5 * vh);
+		setAllEvents(false);
+	}, [event]);
 	const [k, setK] = useState(0);
 	const handleK = (a) => {
 		if (a) setK(k === 2 ? 0 : k + 1);
@@ -39,8 +45,11 @@ const Event = ({ event }) => {
 								<span className="material-icons">remove</span>
 							</Link>
 						</button>
-						<button className="event-mac-head__button">
-							<span className="material-icons"></span>
+						<button
+							className="event-mac-head__button"
+							onClick={() => setAllEvents(true)}
+						>
+							<span className="material-icons">apps</span>
 						</button>
 					</div>
 					<div className="event-mac-head-title">
@@ -48,7 +57,14 @@ const Event = ({ event }) => {
 							{event.title}
 						</span>
 					</div>
-					<div className="event-mac-head-null"></div>
+					<div className="event-mac-head-switch">
+						<button
+							className="event-mac-head-switch__button"
+							onClick={() => setAllEvents(true)}
+						>
+							<span className="material-icons">expand_more</span>
+						</button>
+					</div>
 				</div>
 				<div className="event-mac-body">
 					<div className="event-mac-body-container">
@@ -112,6 +128,7 @@ const Event = ({ event }) => {
 					</div>
 				</div>
 			</div>
+			{allEvents && <AllEvents onClick={() => setAllEvents(false)} />}
 		</section>
 	);
 };
