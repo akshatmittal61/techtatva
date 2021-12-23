@@ -97,6 +97,7 @@ const Footer = () => {
 								<a
 									href={social.link}
 									className="footer-left-bottom-body-social__link"
+									title={social.alt}
 								>
 									<img
 										src={social.src}

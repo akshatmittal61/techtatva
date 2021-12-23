@@ -8,6 +8,9 @@ import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
 import TimeLine from "./pages/TimeLine";
+import events from "./events.js";
+import _ from "lodash";
+import Event from "./pages/Event";
 
 const App = () => {
 	let location = useLocation();
@@ -26,7 +29,7 @@ const App = () => {
 			case "/participate":
 				return "indigo";
 			default:
-				return "bgcolor";
+				return "indigo";
 		}
 	};
 	return (
@@ -42,6 +45,13 @@ const App = () => {
 					<Route path="/timeline" element={<TimeLine />} />
 					<Route path="/team" element={<Team />} />
 					<Route path="/contact" element={<Contact />} />
+					{events.map((event, index) => (
+						<Route
+							path={`/event/${_.kebabCase(event.title)}`}
+							element={<Event event={event} />}
+							key={index}
+						/>
+					))}
 				</Routes>
 			</main>
 			<Footer />
