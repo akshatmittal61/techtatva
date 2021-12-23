@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import rulesImg from "../images/rules.svg";
-import prizeImg from "../images/gold.svg";
+import prizeImg from "../images/prizes.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import EventRules from "../components/EventRules";
+import EventPrizes from "../components/EventPrizes";
+import EventAbout from "../components/EventAbout";
 
 const Event = ({ event }) => {
 	AOS.init();
@@ -17,7 +20,12 @@ const Event = ({ event }) => {
 		else setK(k === 0 ? 2 : k - 1);
 	};
 	return (
-		<section className="event">
+		<section
+			className="event"
+			style={{
+				backgroundImage: `url(${event.backImg})`,
+			}}
+		>
 			<div className="event-mac">
 				<div className="event-mac-head">
 					<div className="event-mac-head-buttons">
@@ -68,12 +76,19 @@ const Event = ({ event }) => {
 								</span>
 							</div>
 							<div className="event-mac-body-details">
-								{k === 0 && <>{event.content}</>}
-								{k === 1 && <>{event.rules}</>}
+								{k === 0 && (
+									<>
+										<EventAbout content={event.content} />
+									</>
+								)}
+								{k === 1 && (
+									<>
+										<EventRules rules={event.rules} />
+									</>
+								)}
 								{k === 2 && (
 									<>
-										{event.prizes.title}
-										{event.prizes.about}
+										<EventPrizes prizes={event.prizes} />
 									</>
 								)}
 							</div>
