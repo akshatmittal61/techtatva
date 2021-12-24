@@ -32,7 +32,12 @@ const Team = () => {
 		<section className="team">
 			<div className="team-container">
 				<div className="team-head">
-					<span className="team-head-head">Team</span>
+					<span
+						className="team-head-head"
+						style={{ fontSize: "3rem", lineHeight: "2.5rem" }}
+					>
+						Team
+					</span>
 				</div>
 				<div className="team-body">
 					{teams.map((team, index) => (

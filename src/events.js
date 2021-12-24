@@ -1,4 +1,3 @@
-import event_img from "./images/event_img.svg";
 import _0back from "./images/0/back.png";
 import _00 from "./images/0/0.jpg";
 import _01 from "./images/0/1.jpg";
@@ -83,7 +82,6 @@ const events = [
 		content: [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc faucibus a pellentesque sit. Cursus in hac habitasse platea. Et netus et malesuada fames ac turpis. In nulla posuere sollicitudin aliquam ultrices sagittis. Sit amet consectetur adipiscing elit duis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. At in tellus integer feugiat scelerisque varius morbi enim nunc. Adipiscing at in tellus integer feugiat. Egestas integer eget aliquet nibh praesent tristique. Luctus venena",
 		],
-		images: [event_img],
 		backImg: _1back,
 		aboutImgs: [_10, _11, _12],
 		mode: "Discord Server",
@@ -121,7 +119,6 @@ const events = [
 		content: [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc faucibus a pellentesque sit. Cursus in hac habitasse platea. Et netus et malesuada fames ac turpis. In nulla posuere sollicitudin aliquam ultrices sagittis. Sit amet consectetur adipiscing elit duis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. At in tellus integer feugiat scelerisque varius morbi enim nunc. Adipiscing at in tellus integer feugiat. Egestas integer eget aliquet nibh praesent tristique. Luctus venena",
 		],
-		images: [event_img],
 		backImg: _2back,
 		aboutImgs: [_20, _21, _22],
 		mode: "Discord Server",
@@ -159,7 +156,6 @@ const events = [
 		content: [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc faucibus a pellentesque sit. Cursus in hac habitasse platea. Et netus et malesuada fames ac turpis. In nulla posuere sollicitudin aliquam ultrices sagittis. Sit amet consectetur adipiscing elit duis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. At in tellus integer feugiat scelerisque varius morbi enim nunc. Adipiscing at in tellus integer feugiat. Egestas integer eget aliquet nibh praesent tristique. Luctus venena",
 		],
-		images: [event_img],
 		backImg: _3back,
 		aboutImgs: [_30, _31, _32],
 		mode: "Discord Server",
@@ -197,7 +193,6 @@ const events = [
 		content: [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc faucibus a pellentesque sit. Cursus in hac habitasse platea. Et netus et malesuada fames ac turpis. In nulla posuere sollicitudin aliquam ultrices sagittis. Sit amet consectetur adipiscing elit duis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. At in tellus integer feugiat scelerisque varius morbi enim nunc. Adipiscing at in tellus integer feugiat. Egestas integer eget aliquet nibh praesent tristique. Luctus venena",
 		],
-		images: [event_img],
 		backImg: _4back,
 		aboutImgs: [_40, _41, _42],
 		mode: "Discord Server",
@@ -235,7 +230,6 @@ const events = [
 		content: [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc faucibus a pellentesque sit. Cursus in hac habitasse platea. Et netus et malesuada fames ac turpis. In nulla posuere sollicitudin aliquam ultrices sagittis. Sit amet consectetur adipiscing elit duis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. At in tellus integer feugiat scelerisque varius morbi enim nunc. Adipiscing at in tellus integer feugiat. Egestas integer eget aliquet nibh praesent tristique. Luctus venena",
 		],
-		images: [event_img],
 		backImg: _5back,
 		aboutImgs: [_50, _51, _52],
 		mode: "Discord Server",
@@ -273,7 +267,6 @@ const events = [
 		content: [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc faucibus a pellentesque sit. Cursus in hac habitasse platea. Et netus et malesuada fames ac turpis. In nulla posuere sollicitudin aliquam ultrices sagittis. Sit amet consectetur adipiscing elit duis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. At in tellus integer feugiat scelerisque varius morbi enim nunc. Adipiscing at in tellus integer feugiat. Egestas integer eget aliquet nibh praesent tristique. Luctus venena",
 		],
-		images: [event_img],
 		backImg: _6back,
 		aboutImgs: [_60, _61, _62],
 		mode: "Discord Server",
