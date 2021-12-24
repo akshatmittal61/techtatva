@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Button from "../components/Button";
 import SnackBar from "../components/SnackBar";
@@ -21,7 +22,7 @@ const Contact = () => {
 			[name]: value,
 		});
 	};
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setUser({
 			name: "",
@@ -29,6 +30,14 @@ const Contact = () => {
 			message: "",
 		});
 		console.log(user);
+		try {
+			const newUser = await axios.post(
+				"https://myownrestfullapi.herokuapp.com/sendmail",
+				user
+			);
+		} catch (error) {
+			console.log(error);
+		}
 		setShow(true);
 		setTimeout(() => {
 			setShow(false);
