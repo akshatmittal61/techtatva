@@ -5,13 +5,28 @@ import _01 from "./images/0/1.jpg";
 import _02 from "./images/0/2.jpg";
 import _1back from "./images/1/back.jpeg";
 import _10 from "./images/1/0.png";
-import _11 from "./images/1/1.svg";
-import _12 from "./images/1/2.png";
+import _11 from "./images/1/1.png";
+import _12 from "./images/1/2.svg";
 import _2back from "./images/2/back.jpg";
+import _20 from "./images/2/0.webp";
+import _21 from "./images/2/1.jpg";
+import _22 from "./images/2/2.jpeg";
 import _3back from "./images/3/back.webp";
+import _30 from "./images/3/0.jpg";
+import _31 from "./images/3/1.jpg";
+import _32 from "./images/3/2.jpg";
 import _4back from "./images/4/back.webp";
+import _40 from "./images/4/0.webp";
+import _41 from "./images/4/1.jpeg";
+import _42 from "./images/4/2.jpg";
 import _5back from "./images/5/back.png";
+import _50 from "./images/5/0.jpg";
+import _51 from "./images/5/1.jpg";
+import _52 from "./images/5/2.jpg";
 import _6back from "./images/6/back.jpg";
+import _60 from "./images/6/0.jpg";
+import _61 from "./images/6/1.jpg";
+import _62 from "./images/6/2.jpg";
 const events = [
 	{
 		title: "Treasure Hunt",
@@ -108,6 +123,7 @@ const events = [
 		],
 		images: [event_img],
 		backImg: _2back,
+		aboutImgs: [_20, _21, _22],
 		mode: "Discord Server",
 		schedule: "25 Dec - 26 Dec",
 		rules: [
@@ -145,6 +161,7 @@ const events = [
 		],
 		images: [event_img],
 		backImg: _3back,
+		aboutImgs: [_30, _31, _32],
 		mode: "Discord Server",
 		schedule: "25 Dec - 26 Dec",
 		rules: [
@@ -182,6 +199,7 @@ const events = [
 		],
 		images: [event_img],
 		backImg: _4back,
+		aboutImgs: [_40, _41, _42],
 		mode: "Discord Server",
 		schedule: "25 Dec - 26 Dec",
 		rules: [
@@ -219,6 +237,7 @@ const events = [
 		],
 		images: [event_img],
 		backImg: _5back,
+		aboutImgs: [_50, _51, _52],
 		mode: "Discord Server",
 		schedule: "25 Dec - 26 Dec",
 		rules: [
@@ -256,6 +275,7 @@ const events = [
 		],
 		images: [event_img],
 		backImg: _6back,
+		aboutImgs: [_60, _61, _62],
 		mode: "Discord Server",
 		schedule: "25 Dec - 26 Dec",
 		rules: [

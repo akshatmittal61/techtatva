@@ -13,14 +13,15 @@ const Event = ({ event }) => {
 	AOS.init();
 	const vh = window.innerHeight / 100;
 	const [allEvents, setAllEvents] = useState(false);
+	const [k, setK] = useState(0);
 	useEffect(() => {
 		window.scrollTo(0, 12.5 * vh);
 	}, []);
 	useEffect(() => {
 		window.scrollTo(0, 12.5 * vh);
 		setAllEvents(false);
+		setK(0);
 	}, [event]);
-	const [k, setK] = useState(0);
 	const handleK = (a) => {
 		if (a) setK(k === 2 ? 0 : k + 1);
 		else setK(k === 0 ? 2 : k - 1);
@@ -68,19 +69,16 @@ const Event = ({ event }) => {
 				</div>
 				<div className="event-mac-body">
 					<div className="event-mac-body-container">
-						<div
-							className="event-mac-body-images"
-							style={{
-								backgroundImage: `url(${event.backImg})`,
-							}}
-						>
-							{k == 0 && (
-								<>
-									<img className="event-mac-body-images__img" />
-									<img className="event-mac-body-images__img" />
-									<img className="event-mac-body-images__img" />
-								</>
-							)}
+						<div className="event-mac-body-images">
+							{k === 0 &&
+								event.aboutImgs.map((imgs, id) => (
+									<img
+										src={imgs}
+										alt={event.title}
+										className="event-mac-body-images__img"
+										key={id}
+									/>
+								))}
 							{k === 1 && (
 								<>
 									<img
