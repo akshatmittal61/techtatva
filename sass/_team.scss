@@ -1,0 +1,124 @@
+.team {
+	width: 100%;
+	min-height: 200vh;
+	background-attachment: fixed;
+	background-color: $blue-100;
+	background-image: url("https://www.transparenttextures.com/patterns/padded.png");
+	&-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-flow: column;
+	}
+	&-head,
+	&-body,
+	&-section {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-flow: column;
+		font-family: Audiowide, sans-serif;
+	}
+	&-head {
+		height: $head-height;
+		justify-content: center;
+	}
+	&-section {
+		min-height: $head-height/1.5;
+		justify-content: flex-start;
+		font-size: 2rem;
+		&__head {
+			width: 100%;
+			padding: 0 0.5rem;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&__body {
+			width: 100%;
+			height: 100%;
+			padding: 2.5rem 0;
+			& .person {
+				width: 100%;
+				height: 20rem;
+				display: flex;
+				flex-flow: column;
+				justify-content: flex-start;
+				align-items: center;
+				&-box {
+					width: 15rem;
+					height: 15rem;
+					border-radius: 500px;
+					font-size: 0.875rem;
+					background-blend-mode: lighten;
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+					align-items: center;
+					transition: all var(--transition-time) ease-in-out;
+					outline: 12px solid transparent;
+					transform: scale(1);
+					& > * {
+						opacity: 0;
+						width: 100%;
+						visibility: hidden;
+						transition: all var(--transition-time) ease-in-out;
+					}
+					&:hover {
+						background-color: rgba(255, 255, 255, 0.5);
+						outline: 12px solid rgba(255, 255, 255, 0.25);
+						transform: scale(1.05);
+						box-shadow: $shadow-3d;
+						& > * {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+				&-name,
+				&-subtitle {
+					height: 30%;
+					font-size: 1.25rem;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+				}
+				&-subtitle {
+					height: 20%;
+					font-size: 0.9rem;
+					align-items: center;
+					font-family: "Google Sans", Cabin, -apple-system,
+						BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+						Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+				}
+				&-socials {
+					height: 25%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				&-social {
+					width: 20%;
+					height: 100%;
+					& a {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					& img {
+						object-fit: cover;
+						max-width: 50%;
+						max-height: 50%;
+					}
+				}
+			}
+		}
+	}
+}

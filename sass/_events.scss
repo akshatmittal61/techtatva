@@ -1,0 +1,164 @@
+.events {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--green);
+	display: flex;
+	flex-flow: column;
+	&-head {
+		width: 100%;
+		height: $head-height * 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+		line-height: 3rem;
+		font-family: Audiowide, sans-serif;
+		color: var(--bgcolor);
+		background-color: rgba(0, 0, 0, 0.5);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 50% 100%, 0% 60%);
+		@include respond(tab) {
+			height: $head-height * 1.5;
+		}
+		@include respond(phone) {
+			height: $head-height;
+			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		}
+		& span {
+			padding: 1rem;
+			position: relative;
+			transition: all var(--transiiton-time) ease-in-out;
+			white-space: nowrap;
+		}
+	}
+	&-body {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&-event {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 0;
+		overflow: hidden;
+		@for $i from 1 through 10 {
+			&:nth-child(#{$i}) {
+				@if $i % 2==0 {
+					background-color: rgba(0, 0, 0, 0.5);
+					clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
+					height: 70vh;
+					color: var(--bgcolor);
+					@include respond(phone) {
+						height: auto;
+						clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+					}
+				} @else {
+					height: 50vh;
+					color: var(--tcolor);
+					@include respond(phone) {
+						height: auto;
+					}
+				}
+			}
+			&:nth-child(#{$i}) &-container {
+				@if $i % 2==0 {
+					flex-flow: row;
+					@include respond(tab) {
+						flex-flow: column;
+					}
+				} @else {
+					flex-flow: row-reverse;
+					@include respond(tab) {
+						flex-flow: column;
+					}
+				}
+			}
+		}
+		&-container {
+			width: 80%;
+			max-height: 80%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include respond(phone) {
+				width: 90%;
+			}
+			& > * {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-flow: column;
+				@include respond(tab) {
+					width: 90%;
+					height: 50%;
+				}
+				@include respond(tab) {
+					width: 100%;
+				}
+			}
+		}
+		&-image {
+			height: 100%;
+			padding: 1.5rem 0;
+			@include respond(tab) {
+				padding: 0.5rem 0;
+			}
+			& img {
+				max-width: 70%;
+				max-height: 70%;
+				&:hover {
+					border-top: 10px solid var(--brown);
+					border-right: 10px solid var(--brown-700);
+					border-bottom: 10px solid var(--brown-700);
+					border-left: 10px solid var(--brown);
+				}
+			}
+		}
+		&-content {
+			height: 100%;
+			align-items: flex-start;
+			flex-flow: column;
+			@include respond(tab) {
+				padding: 0.5rem 1rem 1rem 1rem;
+			}
+			& > * {
+				width: 100%;
+				height: 25%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				@include respond(tab) {
+					justify-content: center;
+				}
+			}
+			&__title {
+				font-size: 2.25rem;
+				line-height: 2.5rem;
+				text-transform: uppercase;
+				padding: 0.5rem;
+			}
+			&__about {
+				height: 50%;
+				padding: 1rem 0.5rem;
+				text-align: justify;
+				@include respond(phone) {
+					padding: 0.5rem;
+				}
+			}
+			& ul {
+				margin: 1rem 0;
+			}
+			& li {
+				padding: 0.25rem 0;
+				&::marker {
+					content: " > ";
+				}
+			}
+		}
+	}
+}

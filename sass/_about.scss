@@ -1,0 +1,115 @@
+.about {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column;
+	background-color: var(--indigo-400);
+	&-head {
+		width: 100%;
+		height: $head-height * 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+		line-height: 3rem;
+		font-family: Audiowide, sans-serif;
+		color: var(--bgcolor);
+		background-color: var(--indigo);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 50% 100%, 0% 60%);
+		@include respond(tab) {
+			height: $head-height * 1.5;
+		}
+		@include respond(phone) {
+			height: $head-height;
+			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		}
+		& span {
+			padding: 1rem;
+			position: relative;
+			transition: all var(--transition-time) ease-in-out;
+			white-space: nowrap;
+		}
+	}
+	&-body {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: center;
+		&-container {
+			width: 75%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 1rem 0;
+			background-blend-mode: darken;
+			box-shadow: $shadow-3d;
+			transition: all var(--transition-time) ease-in-out;
+			&:hover {
+				transform: scale(1.05);
+			}
+			@include respond(tab) {
+				width: 80%;
+			}
+			@include respond(tab) {
+				width: 90%;
+			}
+			@for $i from 1 through 4 {
+				&:nth-child(#{$i}) {
+					@if $i % 2==0 {
+						flex-flow: row-reverse;
+						background-color: rgba(0, 0, 0, 0.5);
+						color: var(--bgcolor);
+						@include respond(tab) {
+							flex-flow: column;
+						}
+					} @else {
+						flex-flow: row;
+						background-color: rgba(255, 255, 255, 0.5);
+						color: var(--tcolor);
+						@include respond(tab) {
+							flex-flow: column;
+						}
+					}
+				}
+			}
+			& > * {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				@include respond(tab) {
+					width: 90%;
+					height: 50%;
+				}
+			}
+		}
+		&-image {
+			padding: 1.5rem 0;
+			@include respond(tab) {
+				padding: 0.5rem 0;
+			}
+			& img {
+				max-width: 70%;
+				max-height: 70%;
+			}
+		}
+		&-content {
+			padding: 2rem 1rem;
+			align-items: flex-start;
+			flex-flow: column;
+			@include respond(tab) {
+				padding: 0.5rem 1rem 1rem 1rem;
+			}
+			& ul {
+				margin: 1rem 0;
+			}
+			& li {
+				padding: 0.25rem 0;
+				&::marker {
+					content: " > ";
+				}
+			}
+		}
+	}
+}

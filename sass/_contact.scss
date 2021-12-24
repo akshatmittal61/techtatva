@@ -1,0 +1,90 @@
+.contact {
+	width: 100%;
+	height: 100vh;
+	background-blend-mode: darken;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&-box {
+		width: 85%;
+		height: 90%;
+		clip-path: polygon(
+			25% 0%,
+			75% 0%,
+			100% 50%,
+			75% 100%,
+			25% 100%,
+			0% 50%
+		);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--brown);
+		@include respond(tab){
+			clip-path: none;
+		}
+	}
+	&-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-flow: column;
+	}
+	&-head {
+		width: 100%;
+		height: 10%;
+		font-family: Montserrat, sans-serif;
+		color: var(--bgcolor);
+		text-align: center;
+		font-size: 4rem;
+		line-height: 4rem;
+		padding: 1rem 0;
+		text-transform: uppercase;
+	}
+	&-form {
+		width: 75%;
+		height: 80%;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-evenly;
+		align-items: center;
+		@include respond(tab){
+			width: 85%;
+		}
+		@include respond(phone){
+			width: 95%;
+		}
+		& input,
+		& textarea {
+			width: 75%;
+			background-color: rgba(255, 255, 255, 0.25);
+			color: var(--bgcolor);
+			border-radius: 0;
+			&::placeholder {
+				color: var(--bgcolor-700);
+				font-size: 1rem;
+			}
+			@include respond(tab){
+				width: 85%;
+			}
+			@include respond(phone){
+				width: 95%;
+			}
+		}
+		& input {
+			height: 10%;
+			@include respond(tab){
+				height: 7.5%;
+			}
+			@include respond(phone){
+				height: 5%;
+			}
+		}
+		& textarea {
+			height: 45%;
+		}
+	}
+}

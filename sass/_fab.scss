@@ -1,0 +1,29 @@
+.scroll-to-top {
+	background-color: var(--primary-2);
+	color: var(--tcolor);
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 2000;
+	border: none;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3.5rem;
+	width: 3.5rem;
+	overflow: visible;
+	transition: all var(--transition-time) ease-in-out;
+	&:hover {
+		background-color: var(--primary-1);
+		color: var(--tcolor);
+	}
+	&:active,
+	&:focus {
+		outline: none;
+		background-color: var(--primary-4);
+		color: var(--bgcolor);
+	}
+}
