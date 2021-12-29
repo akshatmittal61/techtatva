@@ -37,9 +37,6 @@ const events = [
 				Pretium fusce id velit ut tortor pretium. Consectetur a erat nam
 				at lectus urna duis convallis. Viverra suspendisse potenti
 				nullam ac tor
-				<button className="btn btn-outline btn-outline-green">
-					About Me
-				</button>
 				<br />
 				Hello Me
 			</>,

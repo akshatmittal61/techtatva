@@ -4,12 +4,13 @@ import ScrollToTop from "../components/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import favicon from "../images/favicon.png";
+import favicon1 from "../images/favicon1.png";
 import bg from "../images/bg.jpg";
 import about1 from "../images/about1.jpeg";
 import about2 from "../images/about2.jpeg";
-import planet from "../images/planet.svg";
 import brochure from "../assets/brochure.pdf";
 import Button from "../components/Button";
+import Header from "../components/Header";
 
 const Home = () => {
 	const vh = window.innerHeight / 100;
@@ -25,7 +26,7 @@ const Home = () => {
 		);
 	});
 	const calculateTimeLeft = () => {
-		const difference = +new Date("12/29/2021") - +new Date();
+		const difference = +new Date("1/25/2022") - +new Date();
 		let timeLeft = {};
 		if (difference > 0) {
 			timeLeft = {
@@ -50,9 +51,16 @@ const Home = () => {
 	AOS.init();
 	return (
 		<section className="home">
+			<Header
+				style={{
+					backgroundImage: `url(${bg})`,
+					height: "12.5vh",
+					backgroundColor: "rgba(0, 0, 0, 0.9)",
+				}}
+			/>
 			<div
 				className="home-hero"
-				style={{ backgroundImage: `url(${bg})` }}
+				style={{ backgroundImage: `url(${bg})`, height: "87.5vh" }}
 			>
 				<div className="home-hero-image">
 					<img
@@ -74,7 +82,7 @@ const Home = () => {
 					style={{
 						background:
 							window.scrollY > 60 * vh
-								? "var(--primary-4)"
+								? "rgba(0,0,0,0.5)"
 								: "transparent",
 						height: window.scrollY > 60 * vh ? "25%" : "40%",
 						position:
@@ -136,7 +144,7 @@ const Home = () => {
 											: "none"
 										: "none",
 							}}
-							color="dark-purple"
+							color="tertiary"
 							containsLink
 							link="/participate"
 						/>
@@ -223,7 +231,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="home-navigation-mid-mid">
-						<img src={planet} alt="Planet" />
+						<img src={favicon1} alt="Planet" />
 					</div>
 					<div className="home-navigation-mid-right">
 						<div className="home-navigation-link">
@@ -272,14 +280,14 @@ const Home = () => {
 					text="Participate"
 					containsLink
 					link="/participate"
-					color="blue"
+					color="tertiary"
 				/>
 				<Button
 					className="home-button"
 					text="Download Brochure"
 					containsHref
 					href={brochure}
-					color="brown"
+					color="tertiary"
 				/>
 			</div>
 			<ScrollToTop />

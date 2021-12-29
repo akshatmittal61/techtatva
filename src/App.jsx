@@ -14,28 +14,10 @@ import Event from "./pages/Event";
 
 const App = () => {
 	let location = useLocation();
-	const getColor = (route) => {
-		switch (route) {
-			case "/contact":
-				return "brown";
-			case "/about":
-				return "dark-purple";
-			case "/team":
-				return "blue";
-			case "/events":
-				return "green";
-			case "/timeline":
-				return "secondary";
-			case "/participate":
-				return "indigo";
-			default:
-				return "indigo";
-		}
-	};
 	return (
 		<>
 			{location.pathname !== "/" && (
-				<Header color={getColor(location.pathname)} />
+				<Header color={"tertiary"} />
 			)}
 			<main>
 				<Routes>

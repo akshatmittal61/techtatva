@@ -40,7 +40,7 @@ const Events = () => {
 											event.title
 										)}`}
 										size="small"
-										color="brown"
+										color="indigo"
 									/>
 								</div>
 							</div>

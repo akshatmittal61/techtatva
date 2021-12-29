@@ -79,7 +79,7 @@ const Contact = () => {
 						<Button
 							text="Submit Response"
 							type={"submit"}
-							color="transparent"
+							color="tertiary"
 							style={{ color: "var(--bgcolor)" }}
 						/>
 					</form>

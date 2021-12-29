@@ -3,25 +3,17 @@ import favicon from "../images/favicon.png";
 import iiitu from "../images/iiitu.gif";
 import { Link } from "react-router-dom";
 
-const Header = ({ color }) => {
+const Header = ({ color, style = { display: "flex" } }) => {
 	return (
 		<header
 			className="header"
 			style={{
 				backgroundColor: `var(--${color}-700)`,
 				color: "var(--bgcolor)",
+				...style,
 			}}
 		>
 			<div className="header-left">
-				<div className="header-left-logo">
-					<Link to="/">
-						<img
-							className="header-left-logo__img"
-							src={favicon}
-							alt="Techtatva"
-						/>
-					</Link>
-				</div>
 				<div className="header-left-logo">
 					<a href="https://iiitu.ac.in">
 						<img
@@ -30,6 +22,15 @@ const Header = ({ color }) => {
 							alt="IIITU"
 						/>
 					</a>
+				</div>
+				<div className="header-left-logo">
+					<Link to="/">
+						<img
+							className="header-left-logo__img"
+							src={favicon}
+							alt="Techtatva"
+						/>
+					</Link>
 				</div>
 			</div>
 			<div className="header-right">
