@@ -112,7 +112,10 @@ const Event = ({ event }) => {
 							<div className="event-mac-body-details">
 								{k === 0 && (
 									<>
-										<EventAbout content={event.content} />
+										<EventAbout
+											content={event.content}
+											mode={event.mode}
+										/>
 									</>
 								)}
 								{k === 1 && (

@@ -806,7 +806,9 @@ main {
     font-size: 4rem;
     line-height: 4rem;
     padding: 1rem 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden; }
   .contact-form {
     width: 75%;
     height: 80%;
@@ -1418,7 +1420,12 @@ main {
       .events-event-content__about {
         height: 50%;
         padding: 1rem 0.5rem;
-        text-align: justify; }
+        text-align: justify;
+        max-height: 6rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; }
         @media (max-width: 672px) {
           .events-event-content__about {
             padding: 0.5rem; } }
@@ -1599,6 +1606,22 @@ main {
         overflow-y: auto; }
       .event-mac-body-about__content {
         padding: 0.5rem 0; }
+        .event-mac-body-about__content h4 {
+          padding: 0.35rem 0;
+          font-size: 1.1rem; }
+      .event-mac-body-about-mode {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.5rem 0; }
+        .event-mac-body-about-mode > * {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0 0.5rem 0 0; }
+        .event-mac-body-about-mode__text {
+          padding: 0 0.5rem; }
       .event-mac-body-rules__ul {
         list-style: none;
         padding: 0 2rem; }

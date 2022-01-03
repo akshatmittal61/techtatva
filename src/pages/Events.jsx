@@ -30,7 +30,7 @@ const Events = () => {
 									{event.title}
 								</div>
 								<div className="events-event-content__about">
-									{event.content[0].slice(0, 150)}
+									{event.content[0]}
 								</div>
 								<div className="events-event__learn">
 									<Button

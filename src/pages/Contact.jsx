@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Button from "../components/Button";
 import SnackBar from "../components/SnackBar";
-import image from "../images/contact.jpeg";
+import image from "../images/contact.jpg";
 
 const Contact = () => {
 	const [show, setShow] = useState(false);

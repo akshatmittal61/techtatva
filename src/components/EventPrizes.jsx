@@ -18,7 +18,7 @@ const EventPrizes = ({ prizes }) => {
 							/>
 						</div>
 						<span className="event-mac-body-prizes__text">
-							{prize.about}
+							{prize.title}: {prize.about}
 						</span>
 					</li>
 				))}
