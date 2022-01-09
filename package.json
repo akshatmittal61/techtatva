@@ -1,7 +1,6 @@
 {
   "name": "techtatva",
   "version": "0.1.0",
-  "homepage": "http://akshatmittal61.github.io/techtatva",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
