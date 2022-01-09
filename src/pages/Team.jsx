@@ -6,6 +6,7 @@ import ld from "../images/linkedin.svg";
 import ig from "../images/instagram.svg";
 import gh from "../images/github.svg";
 import ml from "../images/email.svg";
+import ph from "../images/phone.svg";
 import ScrollToTop from "../components/ScrollToTop";
 
 const Team = () => {
@@ -24,6 +25,8 @@ const Team = () => {
 				return gh;
 			case "email":
 				return ml;
+			case "phone":
+				return ph;
 			default:
 				return;
 		}
