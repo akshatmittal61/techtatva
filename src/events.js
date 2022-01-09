@@ -28,6 +28,150 @@ import _61 from "./images/6/1.jpg";
 import _62 from "./images/6/2.jpg";
 const events = [
 	{
+		title: "Envision Ideathon",
+		content: [
+			<>
+				<p>
+					The key motive here is to help develop a spirit of technical
+					innovation and entrepreneurship by providing an appropriate
+					solution to address some of the most pressing challenges of
+					all time. Participants need to come up with a detailed
+					solution using existing technologies for any of the given
+					problem statements
+				</p>
+			</>,
+			<>
+				<h4>Procedure</h4>
+			</>,
+			<>
+				<p>
+					An intensive and brainstorming event for students are
+					encouraged to realise the needs of the present and hence
+					promoting a gradual change in the ways we develop and use
+					technologies
+				</p>
+			</>,
+		],
+		backImg: _3back,
+		aboutImgs: [_30, _31, _32],
+		mode: <a href="https://meet.google.com">Google Meet</a>,
+		schedule: "25 Dec - 26 Dec",
+		rules: [
+			"Use of the internet is allowed",
+			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
+			"Disclosing or discussing clues between teams is not allowed.",
+			"Clues are divided into 16 levels.",
+			"Each team has to clear the previous level to reach the next level within the given timeline.",
+			"Teams will consist of not more than 3 members.",
+		],
+		prizes: [
+			{
+				title: "Winner",
+				about: "INR 2,500/-",
+			},
+			{
+				title: "Runners Up",
+				about: "INR 2,000/",
+			},
+			{
+				title: "2nd Runners up",
+				about: "INR 1,500/",
+			},
+		],
+		others: (
+			<>
+				<div>Hello World</div>
+			</>
+		),
+	},
+	{
+		title: "Tricky Ciruits",
+		content: [
+			<>
+				If circuits intrigue you, if electronics engineering is your
+				passion, then you’ve come to the right place! Test your design,
+				simulation, and hardware implementation skills with the reallife
+				problems that we’ll give you. The event will be performed in two
+				rounds. Teams will be asked to give their submissions within the
+				timeline. Teams will be judged on their skills.
+			</>,
+		],
+		backImg: _6back,
+		aboutImgs: [_60, _61, _62],
+		mode: (
+			<a href="https://www.circuit-diagram.org/editor/">
+				circuit-diagram.org/editor/
+			</a>
+		),
+		schedule: "25 Dec - 26 Dec",
+		rules: [
+			"Use of the internet is allowed",
+			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
+			"Disclosing or discussing clues between teams is not allowed.",
+			"Clues are divided into 16 levels.",
+			"Each team has to clear the previous level to reach the next level within the given timeline.",
+			"Teams will consist of not more than 3 members.",
+		],
+		prizes: [
+			{
+				title: "Winner",
+				about: "INR 2000/-",
+			},
+			{
+				title: "Runners up",
+				about: "INR 1500/-",
+			},
+			{
+				title: "2nd Runners up",
+				about: "INR 1000/-",
+			},
+		],
+	},
+	{
+		title: "Code Chronicles",
+		content: [
+			<>
+				Code Chronicles is a 3-hour long unrated coding event for
+				students to evaluate their coding skills. This event is aimed to
+				test problem-solving skills, knowledge of data structure and
+				algorithms. This event lets you run through the waves of code
+				smoothly and showcase your coding skills to stay ahead amongst
+				your peers
+			</>,
+		],
+		backImg: _4back,
+		aboutImgs: [_40, _41, _42],
+		mode: <a href="https://codechef.com">Codechef</a>,
+		schedule: "25 Dec - 26 Dec",
+		rules: [
+			"Use of the internet is allowed",
+			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
+			"Disclosing or discussing clues between teams is not allowed.",
+			"Clues are divided into 16 levels.",
+			"Each team has to clear the previous level to reach the next level within the given timeline.",
+			"Teams will consist of not more than 3 members.",
+		],
+		prizes: [
+			{
+				title: "Winner",
+				about: "INR 1500/-",
+			},
+			{
+				title: "Runners up",
+				about: "INR 1000/-",
+			},
+			{
+				title: "2nd Runners up",
+				about: "INR 500/-",
+			},
+		],
+		others: (
+			<>
+				<div>Hello World</div>
+			</>
+		),
+	},
+	{
 		title: "Open, Sesame!",
 		content: [
 			<>
@@ -136,6 +280,51 @@ const events = [
 		),
 	},
 	{
+		title: "What The Meme !",
+		content: [
+			<>
+				To further expand the creative spectrum of Techtatva, we bring
+				you "What the Meme!" an on-spot meme-making competition, where
+				the contestant will be provided a theme/photo to make memes on.
+				This will be a funny and dramatic competition where the winners
+				will be decided on public vote and the best memes will be
+				selected. After the last round, the contestant with the most
+				votes will be declared 1st, 2nd & 3rd place respectively
+			</>,
+		],
+		backImg: _5back,
+		aboutImgs: [_50, _51, _52],
+		mode: <a href="https://forms.google.com">Google Forms</a>,
+		schedule: "25 Dec - 26 Dec",
+		rules: [
+			"Use of the internet is allowed",
+			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
+			"Disclosing or discussing clues between teams is not allowed.",
+			"Clues are divided into 16 levels.",
+			"Each team has to clear the previous level to reach the next level within the given timeline.",
+			"Teams will consist of not more than 3 members.",
+		],
+		prizes: [
+			{
+				title: "Winner",
+				about: "INR 700/-",
+			},
+			{
+				title: "Runners up",
+				about: "INR 500/-",
+			},
+			{
+				title: "2nd Runners up",
+				about: "INR 300/-",
+			},
+		],
+		others: (
+			<>
+				<div>Hello World</div>
+			</>
+		),
+	},
+	{
 		title: "Tech trivia",
 		content: [
 			<>
@@ -186,195 +375,6 @@ const events = [
 				<div>Hello World</div>
 			</>
 		),
-	},
-	{
-		title: "Envision Ideathon",
-		content: [
-			<>
-				<p>
-					The key motive here is to help develop a spirit of technical
-					innovation and entrepreneurship by providing an appropriate
-					solution to address some of the most pressing challenges of
-					all time. Participants need to come up with a detailed
-					solution using existing technologies for any of the given
-					problem statements
-				</p>
-			</>,
-			<>
-				<h4>Procedure</h4>
-			</>,
-			<>
-				<p>
-					An intensive and brainstorming event for students are
-					encouraged to realise the needs of the present and hence
-					promoting a gradual change in the ways we develop and use
-					technologies
-				</p>
-			</>,
-		],
-		backImg: _3back,
-		aboutImgs: [_30, _31, _32],
-		mode: <a href="https://meet.google.com">Google Meet</a>,
-		schedule: "25 Dec - 26 Dec",
-		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
-		],
-		prizes: [
-			{
-				title: "Winner",
-				about: "INR 2,500/-",
-			},
-			{
-				title: "Runners Up",
-				about: "INR 2,000/",
-			},
-			{
-				title: "2nd Runners up",
-				about: "INR 1,500/",
-			},
-		],
-		others: (
-			<>
-				<div>Hello World</div>
-			</>
-		),
-	},
-	{
-		title: "Code Chronicles",
-		content: [
-			<>
-				Code Chronicles is a 3-hour long unrated coding event for
-				students to evaluate their coding skills. This event is aimed to
-				test problem-solving skills, knowledge of data structure and
-				algorithms. This event lets you run through the waves of code
-				smoothly and showcase your coding skills to stay ahead amongst
-				your peers
-			</>,
-		],
-		backImg: _4back,
-		aboutImgs: [_40, _41, _42],
-		mode: <a href="https://codechef.com">Codechef</a>,
-		schedule: "25 Dec - 26 Dec",
-		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
-		],
-		prizes: [
-			{
-				title: "Winner",
-				about: "INR 1500/-",
-			},
-			{
-				title: "Runners up",
-				about: "INR 1000/-",
-			},
-			{
-				title: "2nd Runners up",
-				about: "INR 500/-",
-			},
-		],
-		others: (
-			<>
-				<div>Hello World</div>
-			</>
-		),
-	},
-	{
-		title: "What The Meme !",
-		content: [
-			<>
-				To further expand the creative spectrum of Techtatva, we bring
-				you "What the Meme!" an on-spot meme-making competition, where
-				the contestant will be provided a theme/photo to make memes on.
-				This will be a funny and dramatic competition where the winners
-				will be decided on public vote and the best memes will be
-				selected. After the last round, the contestant with the most
-				votes will be declared 1st, 2nd & 3rd place respectively
-			</>,
-		],
-		backImg: _5back,
-		aboutImgs: [_50, _51, _52],
-		mode: <a href="https://forms.google.com">Google Forms</a>,
-		schedule: "25 Dec - 26 Dec",
-		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
-		],
-		prizes: [
-			{
-				title: "Winner",
-				about: "INR 700/-",
-			},
-			{
-				title: "Runners up",
-				about: "INR 500/-",
-			},
-			{
-				title: "2nd Runners up",
-				about: "INR 300/-",
-			},
-		],
-		others: (
-			<>
-				<div>Hello World</div>
-			</>
-		),
-	},
-	{
-		title: "Tricky Ciruits",
-		content: [
-			<>
-				If circuits intrigue you, if electronics engineering is your
-				passion, then you’ve come to the right place! Test your design,
-				simulation, and hardware implementation skills with the reallife
-				problems that we’ll give you. The event will be performed in two
-				rounds. Teams will be asked to give their submissions within the
-				timeline. Teams will be judged on their skills.
-			</>,
-		],
-		backImg: _6back,
-		aboutImgs: [_60, _61, _62],
-		mode: (
-			<a href="https://www.circuit-diagram.org/editor/">
-				circuit-diagram.org/editor/
-			</a>
-		),
-		schedule: "25 Dec - 26 Dec",
-		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
-		],
-		prizes: [
-			{
-				title: "Winner",
-				about: "INR 2000/-",
-			},
-			{
-				title: "Runners up",
-				about: "INR 1500/-",
-			},
-			{
-				title: "2nd Runners up",
-				about: "INR 1000/-",
-			},
-		],
 	},
 ];
 export default events;
