@@ -105,7 +105,7 @@ const events = [
 		],
 		backImg: _1back,
 		aboutImgs: [_10, _11, _12],
-		mode: <a href="https://stonks.herokuapp.com">stonks.herokuapp.com</a>,
+		mode: <a href="https://techtatvastonks.herokuapp.com/">techtatvastonks.herokuapp.com</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"Use of the internet is allowed",
