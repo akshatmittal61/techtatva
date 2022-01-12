@@ -1,532 +1,332 @@
-import person0 from "./people/0.jpg";
-const teams = [
+import me from './people/0.jpg'
+const people = [
 	{
-		teamTitle: "Executive Members",
-		members: [
+		email: "itsumangsharma@gmail.com",
+		name: "Umang sharma",
+		role: "Co-Coordinator",
+		subtitle: "PR ",
+		ld: "https://linkedin.com/in/0729",
+		gh: "https://github.com/sharmaumang001",
+		tel: 919877918681,
+		img: "https://drive.google.com/open?id=1NIe7cAtHmXFQCr07FyAJOSt_4rAamxnu",
+	},
+	{
+		email: "19155@iiitu.ac.in",
+		name: "Vanshika Pandey",
+		role: "Co-Coordinator",
+		subtitle: "Web Developer",
+		ld: "https://www.linkedin.com/in/vanshika-pandey-a590011a9",
+		gh: "https://github.com/vanshikapandey",
+		tel: 8787050677,
+		img: "https://drive.google.com/open?id=1VvdInjofd_S3xUpTyDJXU-TDbAedbYY5",
+	},
+	{
+		email: "iamsiddharth2207@gmail.com",
+		name: "Siddharth Sharma",
+		role: "Co-Coordinator",
+		subtitle: "ML engineer",
+		ld: "https://www.linkedin.com/in/siddharth-sharma-6a2a4b18b",
+		gh: "https://github.com/SiddharthSharma2207",
+		tel: 6397005918,
+		img: "https://drive.google.com/open?id=1dR-F1B4sJGT2pMgkKj4MYebAp4LEI8k5",
+	},
+	{
+		email: "19229@iiitu.ac.in",
+		name: "Muskan Agrawal",
+		role: "Co-Coordinator",
+		subtitle: "Competitive Programmer and Web Developer",
+		ld: "https://www.linkedin.com/in/muskan-agrawal-425211191",
+		gh: "https://github.com/muskan26062000",
+		tel: 918979738138,
+		img: "https://drive.google.com/open?id=12bTGb5FbKV9CS2QMZZcYXpfdgkGFtsOT",
+	},
+	{
+		email: "kashisharora4110@gmail.com",
+		name: "Kashish Arora",
+		role: "Coordinator",
+		subtitle: "MEAN stack developer | Event Management",
+		ld: "https://www.linkedin.com/in/kashish-arora11/",
+		gh: "https://github.com/kashish-arora",
+		tel: 9501132476,
+		img: "https://drive.google.com/open?id=1FI1zM1X7oWyd7t7oro7x-iwe8dKqhFsY",
+	},
+	{
+		email: "19106@iiitu.ac.in",
+		name: "Aditya Singh",
+		role: "Co-Coordinator",
+		subtitle: "Mern Stack developer",
+		ld: "https://www.linkedin.com/in/thisisadityasingh/",
+		gh: "https://github.com/Aditya-code-collab",
+		tel: 8905801104,
+		img: "https://drive.google.com/open?id=14ZJqKWFRIoSA2cCydGxe7aLuv6FJ4pEq",
+	},
+	{
+		email: "20163@iiitu.ac.in",
+		name: "Varun Prohit",
+		role: "Executive Member",
+		subtitle: "Competitive Programmer | Frontend Developer",
+		ld: "https://www.linkedin.com/in/varun-prohit-a33939201",
+		gh: "https://github.com/VarunProhit",
+		tel: 8103325733,
+		img: "https://drive.google.com/open?id=1VrUIgqPw8mtRqyus5Gx_83qg7MEW4a6M",
+	},
+	{
+		email: "18222@iiitu.ac.in",
+		name: "Anjali Srivastava ",
+		role: "Coordinator",
+		subtitle: "",
+		ld: "http://linkedin.com/in/anjali-srivastava-939852178",
+		gh: "https://github.com/AnjaliSrivastava722",
+		tel: 9140771599,
+		img: "https://drive.google.com/open?id=1fa74Beh16wtsRHiS2x7bXx6llI2YvXHI",
+	},
+	{
+		email: "18213@iiitu.ac.in",
+		name: "Aaryan Gupta",
+		role: "Coordinator",
+		subtitle: "Software developer",
+		ld: "https://www.linkedin.com/in/aaryan-gupta-58b360171",
+		gh: "github.com/AaryanG",
+		tel: 7006298990,
+		img: "https://drive.google.com/open?id=17qFiII8nKyaE7DhgKBxVpPPjSBs4PRDh",
+	},
+	{
+		email: "ykaps1707@gmail.com",
+		name: "Jitaksh Kapoor",
+		role: "Coordinator",
+		subtitle: "Penetration Tester",
+		ld: "https://www.linkedin.com/in/jitaksh-kapoor",
+		gh: "https://github.com/JitakshKapoor",
+		tel: 7696166014,
+		img: "https://drive.google.com/open?id=1ngNsfyRWRiwV-lrjJofXmh7rMKlo2Ow7",
+	},
+	{
+		email: "19315@iiitu.ac.in",
+		name: "Kushagra Johari",
+		role: "Co-Coordinator",
+		subtitle: "Web Developer",
+		ld: "https://www.linkedin.com/",
+		gh: "https://github.com/joharikushagra",
+		tel: 917668987397,
+		img: "https://drive.google.com/open?id=1MAq8FeF-qMEODzPDidWc2-r9jBD7SRyL",
+	},
+	{
+		email: "rishisr.9044@gmail.com",
+		name: "Rishi Srivastava",
+		role: "Executive Member",
+		subtitle: "Competitive Programmer, Frontend Developer",
+		ld: "www.linkedin.com/in/rishi-sr",
+		gh: "https://github.com/RishiSr",
+		tel: 7985714918,
+		img: "https://drive.google.com/open?id=1ElZ47qdi2iMIbpJACzKrhWvvYUk9HSRq",
+	},
+	{
+		email: "priyasharma972046@gmail.com",
+		name: "priya sharma",
+		role: "Co-Coordinator",
+		subtitle: "Full Stack Developer",
+		ld: "https://www.linkedin.com/in/priya-sharma-a58211191/",
+		gh: "https://github.com/PriyaSharma3",
+		tel: 6303617871,
+		img: "https://drive.google.com/open?id=1PkEz-ycFQbRQTJqBvtstnw34mqIjHXJ6",
+	},
+	{
+		email: "pranjal.ksp@gmail.com",
+		name: "Pranjal Joshi",
+		role: "Coordinator",
+		subtitle: "Backend Developer",
+		ld: "https://www.linkedin.com/in/pranjaljoshi05/",
+		gh: "https://github.com/PranjalJoshi05",
+		tel: 8006980617,
+		img: "https://drive.google.com/open?id=1TBOQt2pBmGquCYHS3UilwtxZHqCV8wPV",
+	},
+	{
+		email: "20240@iiitu.ac.in",
+		name: "Sarthak Vishnu",
+		role: "Executive Member",
+		subtitle: "Data Science enthusiast",
+		ld: "https://www.linkedin.com/in/sarthak-vishnu-iiitu-563729201/",
+		gh: "https://github.com/Sarthak-Vishnu",
+		tel: 8080572559,
+		img: "https://drive.google.com/open?id=1pgnCUc2eQjIobdWEptshiFzCILlYqBYd",
+	},
+	{
+		email: "ruhela.sajal017@gmail.com",
+		name: "Sajal Ruhela",
+		role: "Executive Member",
+		subtitle: "Competitive Programmer",
+		ld: "www.linkedin.com/in/sajal-ruhela-688534219",
+		gh: "https://github.com/SajalRuhela017",
+		tel: 8077948591,
+		img: "https://drive.google.com/open?id=1dMieRU0_CSnDAQ4uufmshycnjuM6Qs0u",
+	},
+	{
+		email: "18221@iiitu.ac.in",
+		name: "Bhavya Arora",
+		role: "Coordinator",
+		subtitle: "",
+		ld: "https://www.linkedin.com/in/bhavya-arora-5b6978175/",
+		gh: "https://github.com/Bhavya00",
+		tel: 9680180736,
+		img: "https://drive.google.com/open?id=16ZcKarm6cn6xPlCMyVcBcH5dWXBkQZD8",
+	},
+	{
+		email: "20226@iiitu.ac.in",
+		name: "Nimish Tiwari",
+		role: "Executive Member",
+		subtitle: "Data Science enthusiast",
+		ld: "https://www.linkedin.com/in/nimish-tiwari-iiitu-5b4091229",
+		gh: "https://github.com/phoenix-maker",
+		tel: 9665499462,
+		img: "https://drive.google.com/open?id=17pD3m73Eqde_Ip3w2qH2x0qBM2ZqDdnv",
+	},
+	{
+		email: "19240@iiitu.ac.in",
+		name: "Shubhi Dua ",
+		role: "Co-Coordinator",
+		subtitle: "Java | Data structures | Algorithms ",
+		ld: "https://www.linkedin.com/in/shubhi-dua-65a1a9191",
+		gh: ". ",
+		tel: 8979666098,
+		img: "https://drive.google.com/open?id=1SUAVvdSqbRi08Jis-PcIqTg5zA8YrCRS",
+	},
+	{
+		email: "18211@iiitu.ac.in",
+		name: "Apurv",
+		role: "Coordinator",
+		subtitle: "NLP Engineer",
+		ld: "www.linkedin.com/in/apurvsj",
+		gh: "https://github.com/apurv0303",
+		tel: 6204252595,
+		img: "https://drive.google.com/open?id=1GSnQmY0yJYfNe2AHxdBlHdfGEg8jO-2J",
+	},
+	{
+		email: "18230@iiitu.ac.in",
+		name: "Swarnima Tiwari ",
+		role: "Coordinator",
+		subtitle: "",
+		ld: "https://www.linkedin.com/in/swarnima-tiwari-8b9306179",
+		gh: "https://github.com/swarnima14",
+		tel: 8384859321,
+		img: "https://drive.google.com/open?id=1FvvPUM6lEK0Et2jMfaU_IqcKHUZIY7r8",
+	},
+	{
+		email: "19208@iiitu.ac.in",
+		name: "Ankur Anand",
+		role: "Co-Coordinator",
+		subtitle: "Data Scientist / Junior Developer",
+		ld: "https://www.linkedin.com/in/anandankur2816/",
+		gh: "https://github.com/anandankur2816",
+		tel: 918102036794,
+		img: "https://drive.google.com/open?id=1guevRl_Gic2LDnJ5JxT0OFTnjO4RfGLb",
+	},
+	{
+		email: "mahavirdabas18@gmail.com",
+		name: "Mahavir Dabas",
+		role: "Co-Coordinator",
+		subtitle: "",
+		ld: "https://www.linkedin.com/in/mahavir-dabas-8b920a191/",
+		gh: "https://github.com/MahavirDabas18",
+		tel: 9958703889,
+		img: "https://drive.google.com/open?id=1nHLZRpT_GB3ZIXDBpCQVvdByvUI5f-TG",
+	},
+	{
+		email: "shivanandisshukla@gmail.com",
+		name: "Shivanand Shukla",
+		role: "Co-Coordinator",
+		subtitle: "Data Analyst",
+		ld: "https://www.linkedin.com/in/shivanand-shukla-855382191/",
+		gh: "https://github.com/XS-Shiv",
+		tel: 9521007325,
+		img: "https://drive.google.com/open?id=1zM4uxm00fnjSy4mg_yAGgf5EfkkGSk7V",
+	},
+	{
+		email: "akshatmittal2506@gmail.com",
+		name: "Akshat Mittal",
+		role: "Executive Member",
+		subtitle: "MERN Stack Developer",
+		ld: "https://www.linkedin.com/in/akshat-mittal-851073202",
+		gh: "https://www.github.com/akshatmittal61",
+		tel: 9456849466,
+		img: "https://drive.google.com/open?id=1XMJ0ZAESJQ-pfiOQKCg8O089718C3Yol",
+	},
+	{
+		email: "19241@iiitu.ac.in",
+		name: "Siddhant Kaashikar",
+		role: "Co-Coordinator",
+		subtitle: "Digital Design Engineer",
+		ld: "https://www.linkedin.com/in/skaashikar/",
+		gh: "N/A",
+		tel: 917350014149,
+		img: "https://drive.google.com/open?id=11xEsg94XsjaWkJGwCU6eqcHfd-u8Jtvw",
+	},
+	{
+		email: "akshaatdps12@gmail.com",
+		name: "Akshat Khosya",
+		role: "Executive Member",
+		subtitle: "MERN STACK DEVELOPER",
+		ld: "https://www.linkedin.com/in/akshat-khosya-7b9321201/",
+		gh: "https://github.com/akshat-khosya/epmoc/issues",
+		tel: 9416908474,
+		img: "https://drive.google.com/open?id=1V2wOmltPlml6TaxcvNQ0G4eGqz_XOFDb",
+	},
+];
+let cooridnators = [];
+let cocooridnators = [];
+let executives = [];
+let volunterrs = [];
+
+people.forEach((person) => {
+	let newObj = {
+		name: person.name,
+		subtitle: person.subtitle,
+		image: me,
+		socials: [
 			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
+				handle: "linkedin",
+				link: person.ld,
+				username: person.ld.slice(28),
 			},
 			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
+				handle: "github",
+				link: person.gh,
+				username: person.gh.slice(19),
 			},
 			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
+				handle: "phone",
+				link: `tel:${person.tel}`,
+				username: `${person.tel}`,
 			},
 			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
+				handle: "email",
+				link: `mailto:${person.email}`,
+				username: `${person.email}`,
 			},
 		],
+	};
+	if (person.role === "Coordinator") cooridnators = [...cooridnators, newObj];
+	if (person.role === "Co-Coordinator")
+		cocooridnators = [...cocooridnators, newObj];
+	if (person.role === "Executive Member")
+		executives = [...executives, newObj];
+	if (person.role === "Volunteer") volunterrs = [...volunterrs, newObj];
+});
+let teams = [
+	{
+		teamTitle: "Coordinators",
+		members: cooridnators,
+	},
+	{
+		teamTitle: "Co-Coordinators",
+		members: cocooridnators,
 	},
 	{
 		teamTitle: "Executive Members",
-		members: [
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-		],
+		members: executives,
 	},
 	{
-		teamTitle: "Executive Members",
-		members: [
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-			{
-				name: "Akshat Mittal",
-				subtitle: "MERN Stack Developer",
-				image: person0,
-				socials: [
-					{
-						handle: "linkedin",
-						link: "https://www.linkedin.com/in/akshat-mittal-851073202",
-						username: "@akshat-mittal-851073202",
-					},
-					{
-						handle: "github",
-						link: "https://github.com/akshatmittal61",
-						username: "@akshatmittal61",
-					},
-					{
-						handle: "phone",
-						link: "tel:9456849466",
-						username: "9456849466",
-					},
-					{
-						handle: "email",
-						link: "mailto:akshatmittal2506@gmail.com",
-						username: "akshatmittal2506@gmail.com",
-					},
-				],
-			},
-		],
+		teamTitle: "Volunteers",
+		members: volunterrs,
 	},
 ];
 export default teams;
