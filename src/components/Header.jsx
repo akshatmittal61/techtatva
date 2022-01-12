@@ -3,7 +3,7 @@ import favicon from "../images/favicon.png";
 import iiitu from "../images/iiitu.gif";
 import { Link } from "react-router-dom";
 
-const Header = ({ color, style = { display: "flex" } }) => {
+const Header = ({ color, style = {} }) => {
 	return (
 		<header
 			className="header"

@@ -1,67 +1,43 @@
 const timeline = [
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Last date to register and submit abstract for Envision - Ideathon",
+		time: "21 Jan 2022",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Envision Ideathon Round 1 results",
+		time: "22 Jan 2022 11:00 AM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Open Seasme starts",
+		time: "22 Jan 2022 12:00 PM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Quizzardry",
+		time: "22 Jan 2022 3:00 PM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "What the Meme",
+		time: "22 Jan 2022 5:00 PM - 7:00 PM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Code Chronicles",
+		time: "22 Jan 2022 9:00 PM - 10:00 PM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Open Seasme Ends",
+		time: "23 Jan 2022 12:00 PM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Envision Ideathon - PPT round",
+		time: "23 Jan 2022 2:00 PM - 3:00 PM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Tricky Circuits",
+		time: "23 Jan 2022 5:00 PM - 8:00 PM",
 	},
 	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
-	},
-	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
-	},
-	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
-	},
-	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
-	},
-	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
-	},
-	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
-	},
-	{
-		title: "Treasure Hunt",
-		time: "25 Dec 11:30pm - 26 Dec 12:30 pm",
+		title: "Last date to register and submit portfolio for Stonks",
+		time: "23 Jan 2022 10:00 PM",
 	},
 ];
 export default timeline;

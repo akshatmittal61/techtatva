@@ -24,7 +24,7 @@ const TimeLine = () => {
 			<div className="timeline-body">
 				<div
 					className="timeline-bar"
-					style={{ height: `${timeline.length * 8.5}rem` }}
+					style={{ height: `${timeline.length * 9}rem` }}
 				></div>
 				<div className="timeline-container">
 					{timeline.map((activity, index) => (
