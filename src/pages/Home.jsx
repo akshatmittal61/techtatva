@@ -87,7 +87,7 @@ const Home = () => {
 						height: window.scrollY > 60 * vh ? "25%" : "40%",
 						position:
 							window.scrollY > 60 * vh &&
-							window.scrollY < totalHeight - 140 * vh
+								window.scrollY < totalHeight - 140 * vh
 								? "fixed"
 								: "relative",
 					}}
@@ -100,7 +100,7 @@ const Home = () => {
 							style={{
 								display:
 									window.scrollY > 60 * vh &&
-									window.scrollY < totalHeight - 140 * vh
+										window.scrollY < totalHeight - 140 * vh
 										? window.innerWidth > 880
 											? "flex"
 											: "none"
@@ -130,6 +130,11 @@ const Home = () => {
 						>
 							Innovation Inspired
 						</span>
+						{
+							window.scrollY < 60 * vh && <span style={{
+								fontSize: '1.25rem'
+							}}>22 Jan - 23 Jan 2022</span>
+						}
 					</div>
 					<div className="home-hero-content-right">
 						<Button
@@ -138,7 +143,7 @@ const Home = () => {
 							style={{
 								display:
 									window.scrollY > 60 * vh &&
-									window.scrollY < totalHeight - 140 * vh
+										window.scrollY < totalHeight - 140 * vh
 										? window.innerWidth > 880
 											? "flex"
 											: "none"

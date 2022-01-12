@@ -57,12 +57,11 @@ const events = [
 		mode: <a href="https://meet.google.com">Google Meet</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
+			"Plagiarism of any sort will not be entertained. However, participants can take inspiration from already existing technologies.",
+			"Last date to submit the proposal would be_________ of the subsequent week.",
+			"Team (2-5) would be allowed to participate.",
+			"Participants must follow the format provided by the organizing committee for the proposal.",
+			"Purely Software solutions will not be accepted. Hence, hardware integration of the project is compulsory.",
 		],
 		prizes: [
 			{
@@ -95,6 +94,12 @@ const events = [
 				rounds. Teams will be asked to give their submissions within the
 				timeline. Teams will be judged on their skills.
 			</>,
+			<>
+				<span className="event-mac-body-head" style={{ padding: '1.25rem 0', color: "var(--bgcolor)" }}>Pre requisites</span>
+				<ul style={{ listStyle: 'none' }}>
+					<li style={{ padding: '0.25rem 0' }}>Basic to Intermediate knowledge level of Electronic and Electrical Circuits</li>
+				</ul>
+			</>
 		],
 		backImg: _6back,
 		aboutImgs: [_60, _61, _62],
@@ -105,12 +110,25 @@ const events = [
 		),
 		schedule: "25 Dec - 26 Dec",
 		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
+			<>
+				<div className="tricky-circuits-title">Round 1</div>
+				<ol className="tricky-circuits-ol" type='a'>
+					<li>A set of 5 questions will be given and 4 hours minutes will be allotted for solving them.</li>
+					<li>In every question the participant will be provided with input and output signals for which they have to design the required circuit with the given set of components.</li>
+					<li>Students submitting their solutions within the provided time frame will move to the next round.</li>
+					<li>It will be time-based event, the team with least time will win.</li>
+					<li>Any team unable to provide all the circuits in given time will be eliminated.</li>
+				</ol>
+			</>,
+			<>
+				<div className="tricky-circuits-title">Round 2</div>
+				<ol className="tricky-circuits-ol" type='a'>
+					<li>Teams will be given 3 problem statements for which they will have to design a circuit.</li>
+					<li>Teams will be given 3 hours for this round.</li>
+					<li>It will be time-based event, the team with least time will win.</li>
+					<li>In case no team is able to complete all three, team completed 2 problems first will be awarded.</li>
+				</ol>
+			</>,
 		],
 		prizes: [
 			{
@@ -246,18 +264,28 @@ const events = [
 				We will be searching for the best portfolio with the maximum
 				return
 			</>,
+			<>
+				<span className="event-mac-body-head" style={{ padding: '1.25rem 0', color: "var(--bgcolor)" }}>Pre requisites</span>
+				<ul style={{ listStyle: 'none' }}>
+					<li style={{ padding: '0.25rem 0' }}>Basic knowledge of Investment and Stock Market.</li>
+					<li style={{ padding: '0.25rem 0' }}>Knowledge on how to make portfolios.</li>
+				</ul>
+			</>
 		],
 		backImg: _1back,
 		aboutImgs: [_10, _11, _12],
 		mode: <a href="https://techtatvastonks.herokuapp.com/">techtatvastonks.herokuapp.com</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
+			"Participants can only include the companies listed in NSE.",
+			"The initial price considered of the stock would be the closing price on the day before the submission day i.e., Friday the 19th November (tentatively).",
+			"Shares of minimum one company must be added in the portfolio.",
+			"Shares of maximum 10 different companies can be added in the portfolio.",
+			"Participants can use any source to know the best required.",
+			"Only the profit or loss earned from the principle of Rs. 5 Lakh will be taken into account.",
+			"If the limit exceeds, the last added stock would be excluded from the portfolio, and so on until the total investment is under 5 lakh INR",
+			"Minimum volume of share bought must be 50k.",
+			"If a particular company (whose shares are bought) announces bonus shares or dividends in the notice period then its profit will also be considered.",
 		],
 		prizes: [
 			{

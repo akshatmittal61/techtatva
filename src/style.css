@@ -1621,6 +1621,17 @@ main {
         color: var(--mac-tcolor);
         overflow-x: hidden;
         overflow-y: auto; }
+        .event-mac-body-details .event-mac-body-head {
+          font-size: 2rem; }
+        .event-mac-body-details .tricky-circuits-title {
+          font-size: 1.5rem;
+          color: var(--bgcolor); }
+        .event-mac-body-details .tricky-circuits-ol {
+          padding: 1rem 2rem; }
+          .event-mac-body-details .tricky-circuits-ol li {
+            padding: 0.25rem 0; }
+            .event-mac-body-details .tricky-circuits-ol li::marker {
+              color: var(--bgcolor); }
       .event-mac-body-about__content {
         padding: 0.5rem 0; }
         .event-mac-body-about__content h4 {
