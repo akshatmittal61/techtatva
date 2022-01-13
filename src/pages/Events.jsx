@@ -34,7 +34,7 @@ const Events = () => {
 								</div>
 								<div className="events-event__learn">
 									<Button
-										text="Learn More"
+										text="Register Here"
 										containsLink
 										link={`/event/${_.kebabCase(
 											event.title

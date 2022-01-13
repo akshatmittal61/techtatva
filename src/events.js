@@ -293,21 +293,21 @@ const events = [
 		title: "Code Chronicles",
 		content: [
 			<>
-				Code Chronicles is a unrated coding event for students to
-				evaluate their coding skills. This event is aimed to test
-				problem-solving skills, knowledge of data structure and
+				Code Chronicles is a 2-hour long unrated coding event for
+				students to evaluate their coding skills. This event is aimed to
+				test problem-solving skills, knowledge of data structure and
 				algorithms. This event lets you run through the waves of code
 				smoothly and showcase your coding skills to stay ahead amongst
-				your peers
+				your peers.
 			</>,
 			<>
 				Code Chronicles is a coding event for students to check their
 				coding skills. This event is aimed to test problem solving
 				skills, knowledge of data structure and algorithms. 5 questions
-				will be listed in the contest. Each question will carry 100
-				points. Multiple submissions are allowed. Participants will be
-				ranked according to the points gained and in case of same
-				points/score time taken to solve will be considered.
+				will be listed in the contest. Multiple submissions are allowed
+				and time penalty for every incorrect submission. Participants
+				will be ranked according to the points gained along with better
+				submission accuracy.
 			</>,
 			<div style={{ display: "flex" }}>
 				<Button
