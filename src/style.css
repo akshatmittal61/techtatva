@@ -948,12 +948,10 @@ main {
         .team-section__body .person-name, .team-section__body .person-subtitle {
           height: 30%;
           font-size: 1.25rem;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
           display: flex;
           justify-content: center;
-          align-items: flex-end; }
+          align-items: flex-end;
+          text-align: center; }
         .team-section__body .person-subtitle {
           height: 20%;
           font-size: 0.9rem;
