@@ -33,6 +33,9 @@ import krishakChhura from "./people/krishakChhura.jpg";
 import aditiChauhan from "./people/aditiChauhan.jpeg";
 import sayakMondal from "./people/sayakMondal.png";
 import vanshSingh from "./people/vanshSingh.jpg";
+import ketanSrivastava from "./people/ketanSrivastava.jpeg";
+import chelsiJain from "./people/chelsiJain.jpg";
+import mitaliJain from "./people/mitaliJain.jpg";
 const people = [
 	{
 		email: "itsumangsharma@gmail.com",
@@ -383,6 +386,36 @@ const people = [
 		gh: "https://github.com/Va1nsh14",
 		tel: 9569649636,
 		img: vanshSingh,
+	},
+	{
+		email: "20216@iiitu.ac.in",
+		name: "Ketan srivastava",
+		role: "Executive Member",
+		subtitle: "",
+		ld: "Ketan Srivastava",
+		gh: "https://github.com/Ketansri22",
+		tel: 9958633580,
+		img: ketanSrivastava,
+	},
+	{
+		email: "20208@iiitu.ac.in",
+		name: "Chelsi Jain",
+		role: "Executive Member",
+		subtitle: "Web Developer",
+		ld: "https://www.linkedin.com/in/chelsi-jain-50967b205",
+		gh: "https://github.com/Chelsijain20",
+		tel: 9057565604,
+		img: chelsiJain,
+	},
+	{
+		email: "itzmitali03@gmail.com",
+		name: "Mitali Jain",
+		role: "Executive Member",
+		subtitle: "MERN Stack Developer",
+		ld: "https://www.linkedin.com/in/mitali-jain-6b4b1a204",
+		gh: "https://github.com/Mitalijain3",
+		tel: 7737149963,
+		img: mitaliJain,
 	},
 ];
 console.log(people.length);
