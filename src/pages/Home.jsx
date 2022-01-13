@@ -26,7 +26,7 @@ const Home = () => {
 		);
 	});
 	const calculateTimeLeft = () => {
-		const difference = +new Date("1/25/2022") - +new Date();
+		const difference = +new Date("1/22/2022") - +new Date();
 		let timeLeft = {};
 		if (difference > 0) {
 			timeLeft = {
@@ -118,7 +118,7 @@ const Home = () => {
 								fontWeight: "700",
 							}}
 						>
-							TECHतत्त्व: 2021
+							TECHतत्त्व: 2022
 						</span>
 						<span
 							style={{
@@ -128,7 +128,7 @@ const Home = () => {
 										: "3rem",
 							}}
 						>
-							Innovation Inspired
+							Start making sense
 						</span>
 						{
 							window.scrollY < 60 * vh && <span style={{
@@ -151,7 +151,7 @@ const Home = () => {
 							}}
 							color="tertiary"
 							containsLink
-							link="/participate"
+							link="/events"
 						/>
 					</div>
 				</div>
@@ -240,7 +240,7 @@ const Home = () => {
 					</div>
 					<div className="home-navigation-mid-right">
 						<div className="home-navigation-link">
-							<Link to="/participate">Participate</Link>
+							<Link to="/events">Participate</Link>
 						</div>
 					</div>
 				</div>
@@ -284,7 +284,7 @@ const Home = () => {
 					className="home-button"
 					text="Participate"
 					containsLink
-					link="/participate"
+					link="/events"
 					color="tertiary"
 				/>
 				<Button

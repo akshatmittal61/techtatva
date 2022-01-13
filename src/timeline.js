@@ -12,7 +12,7 @@ const timeline = [
 		time: "22 Jan 2022 12:00 PM",
 	},
 	{
-		title: "Quizzardry",
+		title: "Quizarrdry",
 		time: "22 Jan 2022 3:00 PM",
 	},
 	{

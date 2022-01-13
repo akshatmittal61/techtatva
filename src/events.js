@@ -162,11 +162,13 @@ const events = [
 		aboutImgs: [_30, _31, _32],
 		schedule: "25 Dec - 26 Dec",
 		rules: [
+			"The participants will have to submit their abstracts by 21st Jan 2022 (12:00 PM). The ideas should be original, plagiarism will not be tolerated. ",
+			"After abstract submission, the panel will shortlist five teams for the next round on the basis of several parameters which have been clearly stated later in this document. Results of the same will be announced by 22nd Jan 2022 (12:00 PM). The selected teams will be contacted via email. ",
+			"Team (1-3) is allowed to participate",
 			"Plagiarism of any sort will not be entertained. However, participants can take inspiration from already existing technologies.",
-			"Last date to submit the proposal would be_________ of the subsequent week.",
-			"Team (2-5) would be allowed to participate.",
-			"Participants must follow the format provided by the organizing committee for the proposal.",
-			"Purely Software solutions will not be accepted. Hence, hardware integration of the project is compulsory.",
+			"The last date to submit the abstract is 22nd Jan 2022 (12:00 PM).",
+			"Purely software solutions will not be accepted. Hence, hardware integration of the project is compulsory.",
+			"Participants must follow the format provided by the organizing commitee for the proposal.",
 		],
 		prizes: [
 			{
@@ -291,9 +293,9 @@ const events = [
 		title: "Code Chronicles",
 		content: [
 			<>
-				Code Chronicles is a 3-hour long unrated coding event for
-				students to evaluate their coding skills. This event is aimed to
-				test problem-solving skills, knowledge of data structure and
+				Code Chronicles is a unrated coding event for students to
+				evaluate their coding skills. This event is aimed to test
+				problem-solving skills, knowledge of data structure and
 				algorithms. This event lets you run through the waves of code
 				smoothly and showcase your coding skills to stay ahead amongst
 				your peers
@@ -320,12 +322,11 @@ const events = [
 		mode: <a href="https://codechef.com">Codechef</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
+			"This event is aimed to test problem solving skills, knowledge of data structure and algorithms.",
+			"Each question will carry 100 points.",
+			"Multiple submissions are allowed.",
+			"Participants will be ranked according to the points gained",
+			"In case of same points/score time taken to solve will be considered.",
 		],
 		prizes: [
 			{
@@ -369,13 +370,12 @@ const events = [
 		],
 		backImg: _0back,
 		aboutImgs: [_00, _01, _02],
-		mode: <a href="https://www.discord.com/app">Discord Server</a>,
+		mode: "Discord",
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
 			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
+			"Clues are divided into 17 levels.",
 			"Each team has to clear the previous level to reach the next level within the given timeline.",
 			"Teams will consist of not more than 3 members.",
 		],
@@ -448,7 +448,7 @@ const events = [
 				<Button
 					text="Register Now"
 					containsHref
-					href="https://techtatvastonks.herokuapp.com/account"
+					href="https://techtatvastonks.herokuapp.com/signup"
 				/>
 			</div>,
 		],
@@ -496,7 +496,7 @@ const events = [
 		content: [
 			<>
 				To further expand the creative spectrum of Techtatva, we bring
-				you "What the Meme!" an on-spot meme-making competition, where
+				you "What the Meme!", an on-spot meme-making competition, where
 				the contestant will be provided a theme/photo to make memes on.
 				This will be a funny and dramatic competition where the winners
 				will be decided on public vote and the best memes will be
@@ -513,11 +513,7 @@ const events = [
 		],
 		backImg: _5back,
 		aboutImgs: [_50, _51, _52],
-		mode: (
-			<div>
-				For submission: <a href="https://discord.com/app">Discord</a>
-			</div>
-		),
+		mode: <div>For submission: Discord</div>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"The registrations should be done online at TechTatva website.",
@@ -551,28 +547,27 @@ const events = [
 		),
 	},
 	{
-		title: "Quizzardry",
+		title: "Quizarrdry",
 		content: [
 			<>
-				If you have a good knowledge of Electronics and Computer Science
-				fundamentals then this is the right time to test it and get some
-				exciting prizes. The quiz will contain 15 Multiple choice
-				questions based on the Electronics and Computer Science
-				fundamentals
+				If you have a quizerable appearance then this is the right time
+				to unlocking your knowledge at the speed of your thoughts.A
+				flurry of questions that makes even Google scratch its head and
+				even faster than the blink of your eye. This year Quizzardry is
+				all set to test the nerves of steel and find the ultimate quiz
+				champion!
 			</>,
-			<>
-				These 15 questions will be divided into three Levels. Level-I
-				will contain 8- Easy questions, level II will be comprised of 7
-				Medium questions &level- III will consist of 6 Hard questions.
-				For questions in the level-I time allotted will be 15 mins, in
-				the level-II time allotted will be 30mins, and for the level-III
-				time allotted will be 40mins. Each correct answer will earn 5
-				points
-			</>,
+			<div style={{ display: "flex" }}>
+				<Button
+					text="Register Now"
+					containsHref
+					href="https://docs.google.com/forms/d/e/1FAIpQLSeTdonDCn1PcLGBBXFBmG6pHaoJMgwCTasze6I44F_NKoI7jQ/viewform?usp=sf_link"
+				/>
+			</div>,
 		],
 		backImg: _2back,
 		aboutImgs: [_20, _21, _22],
-		mode: <a href="https://www.circuit-diagram.org/editor/">D2C</a>,
+		mode: <a href="https://kahoot.com/what-is-kahoot/">Kahoot</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"Use of the internet is allowed",

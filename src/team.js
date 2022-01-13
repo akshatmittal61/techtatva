@@ -16,7 +16,7 @@ import priyaSharma from "./people/priyaSharma.jpeg";
 import shubhiDua from "./people/shubhiDua.jpg";
 import ankurAnand from "./people/ankurAnand.jpg";
 import mahavirDabas from "./people/mahavirDabas.png";
-import shivanandShukla from "./people/shivanandShukla.jpg";
+import shivanandShukla from "./people/shivanandShukla.jpeg";
 import siddhantKaashikar from "./people/siddhantKaashikar.jpeg";
 import varunProhit from "./people/varunProhit.jpg";
 import rishiSrivastava from "./people/rishiSrivastava.jpg";
@@ -25,6 +25,14 @@ import sajalRuhela from "./people/sajalRuhela.jpg";
 import nimishTiwari from "./people/nimishTiwari.jpg";
 import akshatMittal from "./people/akshatMittal.jpg";
 import akshatKhosya from "./people/akshatKhosya.jpeg";
+import prathamSingh from "./people/prathamSingh.jpeg";
+import shubhiArora from "./people/shubhiArora.jpg";
+import srijanOjha from "./people/srijanOjha.jpeg";
+import anurag from "./people/anurag.jpg";
+import krishakChhura from "./people/krishakChhura.jpg";
+import aditiChauhan from "./people/aditiChauhan.jpeg";
+import sayakMondal from "./people/sayakMondal.png";
+import vanshSingh from "./people/vanshSingh.jpg";
 const people = [
 	{
 		email: "itsumangsharma@gmail.com",
@@ -292,11 +300,92 @@ const people = [
 		role: "Co-Coordinator",
 		subtitle: "Digital Design Engineer",
 		ld: "https://www.linkedin.com/in/skaashikar/",
-		gh: "N/A",
+		gh: "",
 		tel: 917350014149,
 		img: siddhantKaashikar,
 	},
+	{
+		email: "prathambsingh891@gmail.com",
+		name: "Pratham Singh",
+		role: "Executive Member",
+		subtitle: "Web Developer",
+		ld: "https://www.linkedin.com/in/pratham-singh-596591203/",
+		gh: "https://github.com/pratham891",
+		tel: 7600662459,
+		img: prathamSingh,
+	},
+	{
+		email: "20158@iiitu.ac.in",
+		name: "Shubhi Arora",
+		role: "Executive Member",
+		subtitle: "Competitive Programmer | Full Stack Web Developer",
+		ld: "https://www.linkedin.com/in/shubhi-arora-15a549205/",
+		gh: "https://github.com/shubhi-arora",
+		tel: 7668191238,
+		img: shubhiArora,
+	},
+	{
+		email: "20247@iiitu.ac.in",
+		name: "Srijan Ojha",
+		role: "Executive Member",
+		subtitle: "Fronted Developer",
+		ld: "https://www.linkedin.com/in/srijan-ojha-074a02212",
+		gh: "",
+		tel: 9336744146,
+		img: srijanOjha,
+	},
+	{
+		email: "20204@iiitu.ac.in",
+		name: "Anurag",
+		role: "Executive Member",
+		subtitle: "Web development and poster making",
+		ld: "https://www.linkedin.com/in/anurag-govind-552977228",
+		gh: "https://github.com/GovindAnurag",
+		tel: 7007210720,
+		img: anurag,
+	},
+	{
+		email: "krishakchhura@gmail.com",
+		name: "Krishak Chhura",
+		role: "Executive Member",
+		subtitle: "Member of surge club",
+		ld: "https://www.linkedin.com/in/krishak-chhura-52b924201",
+		gh: "",
+		tel: 700992379,
+		img: krishakChhura,
+	},
+	{
+		email: "aditi.iiitu@gmail.com",
+		name: "Aditi Chauhan",
+		role: "Executive Member",
+		subtitle: "Tech Enthusiast",
+		ld: "https://www.linkedin.com/in/aditichauhan-",
+		gh: "https://github.com/aditichauhan04",
+		tel: 8126046622,
+		img: aditiChauhan,
+	},
+	{
+		email: "20155@iiitu.ac.in",
+		name: "Sayak Mondal",
+		role: "Executive Member",
+		subtitle: "Video Editor, Graphic designer",
+		ld: "https://www.linkedin.com/in/sayak-mondal-b70384200/",
+		gh: "https://github.com/sayak22",
+		tel: 8373072231,
+		img: sayakMondal,
+	},
+	{
+		email: "vanshsingh1617@gmail.com",
+		name: "Vansh Singh",
+		role: "Executive Member",
+		subtitle: "Full Stack Developer | UI/UX Designer",
+		ld: "https://www.linkedin.com/in/vansh-singh-0414",
+		gh: "https://github.com/Va1nsh14",
+		tel: 9569649636,
+		img: vanshSingh,
+	},
 ];
+console.log(people.length);
 let cooridnators = [];
 let cocooridnators = [];
 let executives = [];
