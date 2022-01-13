@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import _0back from "./images/0/back.png";
 import _00 from "./images/0/0.jpg";
 import _01 from "./images/0/1.jpg";
@@ -51,10 +52,114 @@ const events = [
 					technologies
 				</p>
 			</>,
+			<div style={{ display: "flex" }}>
+				<Button
+					size="small"
+					text="Register Now"
+					containsHref
+					href="https://docs.google.com/forms/d/e/1FAIpQLSfKOo_Isym7ezI6HpGSy6SPoEFeobXVsbEYiqWs5z42WxvrYg/viewform?usp=sf_link"
+				/>
+				<Button
+					size="small"
+					text="Rule Book"
+					containsHref
+					href="https://docs.google.com/document/d/1xNCdRUtV97YOUhJHcXAthejaI5l84f06s_1O6vFPhDg/edit?usp=sharing"
+				/>
+			</div>,
+			<>
+				<span
+					className="event-mac-body-head"
+					style={{ padding: "1.25rem 0", color: "var(--bgcolor)" }}
+				>
+					Problem statements
+				</span>
+				<dl style={{ listStyle: "none" }} className="ideathon-dl">
+					<dt style={{ padding: "0.25rem 0" }}>
+						Power Supply / Shortage
+					</dt>
+					<dd>
+						Growing shortages of power and energy can be anticipated
+						because of population increase and economic growth in
+						developing countries. Future forecasting indicates that
+						the shortages will cause our society to be unsustainable
+						if this situation persists. It is necessary to develop
+						new technologies but it is equally important to save
+						power and energy. Suggest a solution to optimise power
+						supply and overcome power shortage with the use of the
+						latest technologies.
+					</dd>
+					<dt style={{ padding: "0.25rem 0" }}>E-waste disposal</dt>
+					<dd>
+						E-waste or electronic waste refers to old electrical and
+						electronic equipment that have reached the end of their
+						life. E-waste contains numerous toxins. If not disposed
+						of in an appropriate manner these toxins can cause
+						environmental pollution and health hazards. Suggest an
+						effective solution to overcome this problem.
+					</dd>
+					<dt style={{ padding: "0.25rem 0" }}>Smog</dt>
+					<dd>
+						Not only the capital but many Indian cities are facing
+						the issue of smog. Smog is caused by the collection of
+						Particulate Matter (a very fine type of dust and toxic
+						gases) in the air due to stagnant movement of air during
+						winters. Rising air pollution level has significantly
+						increased lung-related ailments (especially asthma and
+						lung cancer) among children and women. The dense smog
+						also results in major air and rail traffic disruptions
+						every year. Suggest an effective solution to overcome
+						this problem.
+					</dd>
+					<dt style={{ padding: "0.25rem 0" }}>Fitness</dt>
+					<dd>
+						The COVID-19 pandemic has brought this fast-moving world
+						to a standstill. The imposed lockdown, resulting in the
+						closure of business activities, public places, fitness
+						and activity centres, and overall social life, has
+						hampered many aspects of the lives of people including
+						routine fitness activities. This has resulted in various
+						psychological issues and serious health concerns.
+						Keeping all these problems in mind, suggest a solution
+						that will ensure that people stay fit.
+					</dd>
+					<dt style={{ padding: "0.25rem 0" }}>
+						Security and Surveillance
+					</dt>
+					<dd>
+						Surveillance cameras, or security cameras, are video
+						cameras used to observe an area. They are often
+						connected to a recording device or IP network and may be
+						watched by a security guard or law enforcement officer.
+						But then also they lack at some point. Justify the above
+						statement with an example.
+					</dd>
+					<dt style={{ padding: "0.25rem 0" }}>
+						Innovation of Farming techniques
+					</dt>
+					<dd>
+						The agricultural sector is one of the largest
+						contributors to the Indian economy. Approximately 60
+						percent of the Indian population works in the farming
+						industry. Suggest solutions that can change the present
+						concepts of farming in India and make it more
+						profitable, efficient, safer, and simple.
+					</dd>
+					<dt style={{ padding: "0.25rem 0" }}>
+						Modernising Traffic Control
+					</dt>
+					<dd>
+						In many countries, with the development of the social
+						economy, the number of automobiles has increased yearly.
+						This has resulted in a series of problems such as road
+						congestion and traffic accidents. Suggest a solution
+						that can help in managing traffic, and prevent road
+						accidents.
+					</dd>
+				</dl>
+			</>,
 		],
 		backImg: _3back,
 		aboutImgs: [_30, _31, _32],
-		mode: <a href="https://meet.google.com">Google Meet</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"Plagiarism of any sort will not be entertained. However, participants can take inspiration from already existing technologies.",
@@ -84,49 +189,86 @@ const events = [
 		),
 	},
 	{
-		title: "Tricky Ciruits",
+		title: "Tricky Circuits",
 		content: [
 			<>
 				If circuits intrigue you, if electronics engineering is your
 				passion, then you’ve come to the right place! Test your design,
-				simulation, and hardware implementation skills with the reallife
-				problems that we’ll give you. The event will be performed in two
-				rounds. Teams will be asked to give their submissions within the
-				timeline. Teams will be judged on their skills.
+				simulation, and hardware implementation skills with the
+				real-life problems that we’ll give you. The event will be
+				performed in two rounds. Teams will be asked to give their
+				submissions within the timeline. Teams will be judged on their
+				skills.
 			</>,
 			<>
-				<span className="event-mac-body-head" style={{ padding: '1.25rem 0', color: "var(--bgcolor)" }}>Pre requisites</span>
-				<ul style={{ listStyle: 'none' }}>
-					<li style={{ padding: '0.25rem 0' }}>Basic to Intermediate knowledge level of Electronic and Electrical Circuits</li>
+				<span
+					className="event-mac-body-head"
+					style={{ padding: "1.25rem 0", color: "var(--bgcolor)" }}
+				>
+					Pre requisites
+				</span>
+				<ul style={{ listStyle: "none" }}>
+					<li style={{ padding: "0.25rem 0" }}>
+						Basic to intermediate level knowledge of Arduino Uno,
+						Tinkercad & basic electrical and electronics.
+					</li>
 				</ul>
-			</>
+			</>,
+			<div style={{ display: "flex" }}>
+				<Button
+					text="Register Now"
+					containsHref
+					href="https://forms.gle/b2kWHCiKGmmDTCbw5"
+				/>
+			</div>,
 		],
 		backImg: _6back,
 		aboutImgs: [_60, _61, _62],
 		mode: (
-			<a href="https://www.circuit-diagram.org/editor/">
-				circuit-diagram.org/editor/
+			<a href="https://www.tinkercad.com/dashboard">
+				tinkercad.com/dashboard
 			</a>
 		),
 		schedule: "25 Dec - 26 Dec",
 		rules: [
+			"Use of the Internet or any kind of reference material is strictly prohibited and plagiarised documents or circuits will not be considered for evaluation.",
+			"You can enter in the event as a team (of max 3) or as an individual as per your preference.",
+			"This event is open to all.",
+			"Multiple teams can enter from the same institution.",
+			"The submitted circuits must be Arduino Uno based only.",
+			"The participant must know the basics of Tinkercad and have a Tinkercad account.",
+			"Only the circuits having proper documentation with them will be considered for evaluation.",
 			<>
-				<div className="tricky-circuits-title">Round 1</div>
-				<ol className="tricky-circuits-ol" type='a'>
-					<li>A set of 5 questions will be given and 4 hours minutes will be allotted for solving them.</li>
-					<li>In every question the participant will be provided with input and output signals for which they have to design the required circuit with the given set of components.</li>
-					<li>Students submitting their solutions within the provided time frame will move to the next round.</li>
-					<li>It will be time-based event, the team with least time will win.</li>
-					<li>Any team unable to provide all the circuits in given time will be eliminated.</li>
+				<div className="tricky-circuits-title">
+					The event will be held in 2 rounds
+				</div>
+				<ol className="tricky-circuits-ol" type="a">
+					<li>
+						The permitted time for the first half will be of 1 hour
+						30 min in which each team has to submit the Tinkercad
+						link and Snapshot of the circuits.
+					</li>
+					<li>
+						The permitted time for the second half will be of 2 hour
+						30 min in which each team has to submit a documentation
+						of the steps/working of the circuits for each problem
+						statement.
+					</li>
 				</ol>
 			</>,
 			<>
-				<div className="tricky-circuits-title">Round 2</div>
-				<ol className="tricky-circuits-ol" type='a'>
-					<li>Teams will be given 3 problem statements for which they will have to design a circuit.</li>
-					<li>Teams will be given 3 hours for this round.</li>
-					<li>It will be time-based event, the team with least time will win.</li>
-					<li>In case no team is able to complete all three, team completed 2 problems first will be awarded.</li>
+				<div className="tricky-circuits-title">Evaluation Criteria</div>
+				<ol className="tricky-circuits-ol" type="a">
+					<li>
+						Fulfillment of objective in the given problem statement.
+					</li>
+					<li>Number of questions solved.</li>
+					<li>Complexity of the circuits.</li>
+					<li>Number of components used in the circuits.</li>
+					<li>
+						Time taken for submission in case the participants solve
+						all the problems before the deadline.
+					</li>
 				</ol>
 			</>,
 		],
@@ -156,6 +298,22 @@ const events = [
 				smoothly and showcase your coding skills to stay ahead amongst
 				your peers
 			</>,
+			<>
+				Code Chronicles is a coding event for students to check their
+				coding skills. This event is aimed to test problem solving
+				skills, knowledge of data structure and algorithms. 5 questions
+				will be listed in the contest. Each question will carry 100
+				points. Multiple submissions are allowed. Participants will be
+				ranked according to the points gained and in case of same
+				points/score time taken to solve will be considered.
+			</>,
+			<div style={{ display: "flex" }}>
+				<Button
+					text="Register Now"
+					containsHref
+					href="https://forms.gle/ao92UCBybQ8xdxcz6"
+				/>
+			</div>,
 		],
 		backImg: _4back,
 		aboutImgs: [_40, _41, _42],
@@ -201,7 +359,13 @@ const events = [
 				password for the next PDF. This could be the best possible way
 				to integrate creative thinking with aptitude analysis.
 			</>,
-			"Hi there again",
+			<>
+				<Button
+					text="Register Now"
+					containsHref
+					href="https://docs.google.com/forms/d/e/1FAIpQLScceLXN9d9X_2PZAfrb67cqPzOSxMS9nkWm-E6-QMixw-iweg/viewform"
+				/>
+			</>,
 		],
 		backImg: _0back,
 		aboutImgs: [_00, _01, _02],
@@ -265,16 +429,36 @@ const events = [
 				return
 			</>,
 			<>
-				<span className="event-mac-body-head" style={{ padding: '1.25rem 0', color: "var(--bgcolor)" }}>Pre requisites</span>
-				<ul style={{ listStyle: 'none' }}>
-					<li style={{ padding: '0.25rem 0' }}>Basic knowledge of Investment and Stock Market.</li>
-					<li style={{ padding: '0.25rem 0' }}>Knowledge on how to make portfolios.</li>
+				<span
+					className="event-mac-body-head"
+					style={{ padding: "1.25rem 0", color: "var(--bgcolor)" }}
+				>
+					Pre requisites
+				</span>
+				<ul style={{ listStyle: "none" }}>
+					<li style={{ padding: "0.25rem 0" }}>
+						Basic knowledge of Investment and Stock Market.
+					</li>
+					<li style={{ padding: "0.25rem 0" }}>
+						Knowledge on how to make portfolios.
+					</li>
 				</ul>
-			</>
+			</>,
+			<div style={{ display: "flex" }}>
+				<Button
+					text="Register Now"
+					containsHref
+					href="https://techtatvastonks.herokuapp.com/account"
+				/>
+			</div>,
 		],
 		backImg: _1back,
 		aboutImgs: [_10, _11, _12],
-		mode: <a href="https://techtatvastonks.herokuapp.com/">techtatvastonks.herokuapp.com</a>,
+		mode: (
+			<a href="https://techtatvastonks.herokuapp.com/">
+				techtatvastonks.herokuapp.com
+			</a>
+		),
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"Participants can only include the companies listed in NSE.",
@@ -317,20 +501,34 @@ const events = [
 				This will be a funny and dramatic competition where the winners
 				will be decided on public vote and the best memes will be
 				selected. After the last round, the contestant with the most
-				votes will be declared 1st, 2nd & 3rd place respectively
+				votes will be declared 1st, 2nd & 3rd place respectively.
 			</>,
+			<div style={{ display: "flex" }}>
+				<Button
+					text="Register Now"
+					containsHref
+					href="https://forms.gle/Kq6zRNqvGJS5NQNU8"
+				/>
+			</div>,
 		],
 		backImg: _5back,
 		aboutImgs: [_50, _51, _52],
-		mode: <a href="https://forms.google.com">Google Forms</a>,
+		mode: (
+			<div>
+				For submission: <a href="https://discord.com/app">Discord</a>
+			</div>
+		),
 		schedule: "25 Dec - 26 Dec",
 		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
+			"The registrations should be done online at TechTatva website.",
+			"This event is open to all and there is no entry fee.",
+			"If at any point of time, the meme is found to be copied from the internet, then the participant will be disqualified from the event immediately.",
+			"Any kind of sexual, racist, controversial or religious memes are not allowed. Doing so may result in disqualification.",
+			"Use of offensive/vulgar language is not allowed.",
+			"The total prize pool for the event is ₹1500/-",
+			"Winners of the final round will be decided by voting via Google form.",
+			"The voting for the final round is open to all. (even non-participants can vote for their favourite memes)",
+			"Every participant must join the Discord server. Its link will be provided in the registration form and on the TechTatva website.",
 		],
 		prizes: [
 			{
@@ -353,7 +551,7 @@ const events = [
 		),
 	},
 	{
-		title: "Tech trivia",
+		title: "Quizzardry",
 		content: [
 			<>
 				If you have a good knowledge of Electronics and Computer Science

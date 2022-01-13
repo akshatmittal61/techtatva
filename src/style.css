@@ -1096,8 +1096,8 @@ main {
     transition: all var(--transition-time) ease-in-out; }
   .activity-title {
     width: 100%;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.35rem;
+    line-height: 1.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1630,6 +1630,11 @@ main {
         overflow-y: auto; }
         .event-mac-body-details .event-mac-body-head {
           font-size: 2rem; }
+        .event-mac-body-details .ideathon-dl dt {
+          font-size: 1.15rem;
+          line-height: 1.5rem;
+          color: var(--bgcolor);
+          margin: 1.25rem 0 0.1rem 0; }
         .event-mac-body-details .tricky-circuits-title {
           font-size: 1.5rem;
           color: var(--bgcolor); }
