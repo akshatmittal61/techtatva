@@ -787,7 +787,7 @@ main {
   align-items: center; }
   .contact-box {
     width: 85%;
-    height: 90%;
+    height: 95%;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     display: flex;
     justify-content: center;
@@ -817,8 +817,7 @@ main {
     line-height: 4rem;
     padding: 1rem 0;
     text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden; }
+    white-space: nowrap; }
     @media (max-width: 880px) {
       .contact-head {
         font-size: 3.4rem; } }
