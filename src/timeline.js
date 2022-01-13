@@ -13,15 +13,15 @@ const timeline = [
 	},
 	{
 		title: "Quizarrdry",
-		time: "22 Jan 2022 3:00 PM",
+		time: "22 Jan 2022 3:00 PM - 3:30 PM",
 	},
 	{
 		title: "What the Meme",
-		time: "22 Jan 2022 5:00 PM - 7:00 PM",
+		time: "22 Jan 2022 5:00 PM - 8:00 PM",
 	},
 	{
 		title: "Code Chronicles",
-		time: "22 Jan 2022 9:00 PM - 10:00 PM",
+		time: "22 Jan 2022 9:00 PM - 11:00 PM",
 	},
 	{
 		title: "Open Seasme Ends",
@@ -29,15 +29,15 @@ const timeline = [
 	},
 	{
 		title: "Envision Ideathon - PPT round",
-		time: "23 Jan 2022 2:00 PM - 3:00 PM",
+		time: "23 Jan 2022 2:00 PM - 4:00 PM",
 	},
 	{
 		title: "Tricky Circuits",
-		time: "23 Jan 2022 5:00 PM - 8:00 PM",
+		time: "23 Jan 2022 5:00 PM - 9:00 PM",
 	},
 	{
 		title: "Last date to register and submit portfolio for Stonks",
-		time: "23 Jan 2022 10:00 PM",
+		time: "23 Jan 2022 11:59 PM",
 	},
 ];
 export default timeline;

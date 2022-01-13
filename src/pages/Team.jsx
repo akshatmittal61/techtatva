@@ -81,11 +81,11 @@ const Team = () => {
 													<span className="person-name">
 														{person.name}
 													</span>
-													<span className="person-subtitle">
+													{/* <span className="person-subtitle">
 														{person.subtitle
 															? person.subtitle
 															: team.teamTitle}
-													</span>
+													</span> */}
 													<div className="person-socials">
 														{person.socials.map(
 															(social, ind) => (

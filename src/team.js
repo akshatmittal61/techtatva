@@ -28,7 +28,7 @@ import akshatKhosya from "./people/akshatKhosya.jpeg";
 import prathamSingh from "./people/prathamSingh.jpeg";
 import shubhiArora from "./people/shubhiArora.jpg";
 import srijanOjha from "./people/srijanOjha.jpeg";
-import anurag from "./people/anurag.jpg";
+import anurag from "./people/anurag.jpeg";
 import krishakChhura from "./people/krishakChhura.jpg";
 import aditiChauhan from "./people/aditiChauhan.jpeg";
 import sayakMondal from "./people/sayakMondal.png";
@@ -438,10 +438,6 @@ let teams = [
 	{
 		teamTitle: "Executive Members",
 		members: executives,
-	},
-	{
-		teamTitle: "Volunteers",
-		members: volunterrs,
 	},
 ];
 export default teams;

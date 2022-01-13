@@ -462,7 +462,7 @@ const events = [
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"Participants can only include the companies listed in NSE.",
-			"The initial price considered of the stock would be the closing price on the day before the submission day i.e., Friday the 19th November (tentatively).",
+			"The initial price considered of the stock would be the closing price on the day before the submission day i.e., Friday, 21st Janunary.",
 			"Shares of minimum one company must be added in the portfolio.",
 			"Shares of maximum 10 different companies can be added in the portfolio.",
 			"Participants can use any source to know the best required.",
