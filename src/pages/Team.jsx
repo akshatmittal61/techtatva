@@ -89,7 +89,7 @@ const Team = () => {
 													<div className="person-socials">
 														{person.socials.map(
 															(social, ind) => (
-																<div
+																social.link!==""&&<div
 																	className="person-social"
 																	key={ind}
 																>
