@@ -570,12 +570,10 @@ const events = [
 		mode: <a href="https://kahoot.com/what-is-kahoot/">Kahoot</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
-			"Use of the internet is allowed",
-			"Hints to crack each level will be given at the interval of 1 hour to teams and the next PDF will be provided in an interval of 1.5 hour.",
-			"Disclosing or discussing clues between teams is not allowed.",
-			"Clues are divided into 16 levels.",
-			"Each team has to clear the previous level to reach the next level within the given timeline.",
-			"Teams will consist of not more than 3 members.",
+			"There must be not more than 1 person per team.",
+			"The time limit to answer each question is 30 seconds.",
+			"Use of Internet is strictly prohibited and the individual will be penalised for doing so if brought to notice.",
+			"There will be no hints provided at any point after a question is asked.",
 		],
 		prizes: [
 			{
