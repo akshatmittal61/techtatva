@@ -319,7 +319,7 @@ const events = [
 		],
 		backImg: _4back,
 		aboutImgs: [_40, _41, _42],
-		mode: <a href="https://codechef.com">Codechef</a>,
+		mode: <a href="https://www.codechef.com/CRON2022">Codechef: Code Chronicles | Aavesh</a>,
 		schedule: "25 Dec - 26 Dec",
 		rules: [
 			"This event is aimed to test problem solving skills, knowledge of data structure and algorithms.",
