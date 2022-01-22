@@ -21,7 +21,7 @@ const timeline = [
 	},
 	{
 		title: "Code Chronicles",
-		time: "22 Jan 2022 9:00 PM - 11:00 PM",
+		time: "23 Jan 2022 9:00 PM - 11:00 PM",
 	},
 	{
 		title: "Open Seasme Ends",
