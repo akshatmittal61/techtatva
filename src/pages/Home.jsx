@@ -87,7 +87,7 @@ const Home = () => {
 						height: window.scrollY > 60 * vh ? "25%" : "40%",
 						position:
 							window.scrollY > 60 * vh &&
-								window.scrollY < totalHeight - 140 * vh
+							window.scrollY < totalHeight - 140 * vh
 								? "fixed"
 								: "relative",
 					}}
@@ -100,7 +100,7 @@ const Home = () => {
 							style={{
 								display:
 									window.scrollY > 60 * vh &&
-										window.scrollY < totalHeight - 140 * vh
+									window.scrollY < totalHeight - 140 * vh
 										? window.innerWidth > 880
 											? "flex"
 											: "none"
@@ -130,11 +130,15 @@ const Home = () => {
 						>
 							Start making sense
 						</span>
-						{
-							window.scrollY < 60 * vh && <span style={{
-								fontSize: '1.25rem'
-							}}>22 Jan - 23 Jan 2022</span>
-						}
+						{window.scrollY < 60 * vh && (
+							<span
+								style={{
+									fontSize: "1.25rem",
+								}}
+							>
+								22 Jan - 23 Jan 2022
+							</span>
+						)}
 					</div>
 					<div className="home-hero-content-right">
 						<Button
@@ -143,7 +147,7 @@ const Home = () => {
 							style={{
 								display:
 									window.scrollY > 60 * vh &&
-										window.scrollY < totalHeight - 140 * vh
+									window.scrollY < totalHeight - 140 * vh
 										? window.innerWidth > 880
 											? "flex"
 											: "none"
@@ -253,29 +257,36 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div
-				className="home-duration"
-				style={{ backgroundImage: `url(${bg})` }}
-			>
-				<div className="home-duration-timer">
-					<div className="home-duration-timer-days">
-						{timeLeft.days}
-						<span>Days </span>
-					</div>
-					<div className="home-duration-timer-hours">
-						{timeLeft.hours}
-						<span>Hours </span>
-					</div>
-					<div className="home-duration-timer-minutes">
-						{timeLeft.minutes}
-						<span>Minutes </span>
-					</div>
-					<div className="home-duration-timer-seconds">
-						{timeLeft.seconds}
-						<span>Seconds</span>
-					</div>
-				</div>
-			</div>
+			{() => {
+				const difference = +new Date("1/22/2022") - +new Date();
+				if (difference > 0)
+					return (
+						<div
+							className="home-duration"
+							style={{ backgroundImage: `url(${bg})` }}
+						>
+							<div className="home-duration-timer">
+								<div className="home-duration-timer-days">
+									{timeLeft.days}
+									<span>Days </span>
+								</div>
+								<div className="home-duration-timer-hours">
+									{timeLeft.hours}
+									<span>Hours </span>
+								</div>
+								<div className="home-duration-timer-minutes">
+									{timeLeft.minutes}
+									<span>Minutes </span>
+								</div>
+								<div className="home-duration-timer-seconds">
+									{timeLeft.seconds}
+									<span>Seconds</span>
+								</div>
+							</div>
+						</div>
+					);
+				else return <></>;
+			}}
 			<div
 				className="home-buttons"
 				style={{ backgroundImage: `url(${bg})` }}
