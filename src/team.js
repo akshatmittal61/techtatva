@@ -38,6 +38,7 @@ import vanshSingh from "./people/vanshSingh.jpg";
 import ketanSrivastava from "./people/ketanSrivastava.jpeg";
 import chelsiJain from "./people/chelsiJain.jpg";
 import mitaliJain from "./people/mitaliJain.jpg";
+import abhinam from "./people/abhinam.png";
 const people = [
 	{
 		email: "itsumangsharma@gmail.com",
@@ -128,6 +129,16 @@ const people = [
 		gh: "https://github.com/VarunProhit",
 		tel: 8103325733,
 		img: varunProhit,
+	},
+	{
+		email: "20102@iiitu.ac.in",
+		name: "Abhinam",
+		role: "Executive Member",
+		subtitle: "Backend Developer",
+		ld: "https://www.linkedin.com/in/abhinam-khatiyan-56041424a/",
+		gh: "https://github.com/Abhinam11",
+		tel: 7037832111,
+		img: abhinam,
 	},
 	{
 		email: "20208@iiitu.ac.in",
